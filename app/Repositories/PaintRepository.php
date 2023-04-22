@@ -36,7 +36,10 @@ class PaintRepository extends ModuleRepository
 
     public function allPaintsWithCategory() 
     {
-        return $this->model
+       $isExist = $this->model->exists();
+        if($isExist)
+        {
+            return $this->model
             ->rightJoin('paints_items','paints_items.paint_id','=','paints.id')
             ->select('paints_items.*','paints.*')
             ->leftJoin('paint_categories', 'paints.paint_categories_id', '=', 'paint_categories.id')
@@ -47,6 +50,11 @@ class PaintRepository extends ModuleRepository
             ->sortByDesc(function ($stats, $key) {
                 return count($stats);
             });
+        }
+        else
+        {
+            return [];
+        }   
     }
 
     public function paintDetail($id)

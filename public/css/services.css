@@ -1,0 +1,83 @@
+/*** Hero Header ***/
+.hero-header { 
+    background: url(../img/bg-bottom-hero.png), 
+    url(../img/thumbnail-top-left.svg), 
+    url(../img/thumbnail-right-bottom.svg), 
+    url(../img/thumbnail-left-bottom.svg), 
+    linear-gradient(to right, var(--main-green), var(--main-blue));
+    background-position: center bottom -1px, left -49px top -58px, bottom 18% right 0px, left -17% bottom -88px, left 0 bottom 0;
+    background-size: contain, 200px, 237px, 40%, cover;
+    background-repeat: no-repeat;
+  }
+  
+/*** Service ***/
+.service-item {
+    position: relative;
+    height: 350px;
+    padding: 30px 25px;
+    background: #FFFFFF;
+    box-shadow: 0 0 45px rgba(0, 0, 0, .08);
+    transition: .5s;
+}
+
+.service-item:hover {
+    background: var(--main-blue);
+}
+
+.service-item .service-icon {
+    margin: 0 auto 20px auto;
+    width: 90px;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--light);
+    background: url(../img/icon-shape-primary.svg) center center no-repeat;
+    transition: .5s;
+}
+
+.service-item:hover .service-icon {
+    color: var(--main-blue);
+    background: url(../img/icon-shape-white.svg);
+}
+
+.service-item h5,
+.service-item p {
+    transition: .5s;
+}
+
+.service-item:hover h5,
+.service-item:hover p {
+    color: var(--light);
+}
+
+.service-item a.btn {
+    position: relative;
+    display: flex;
+    color: var(--main-blue);
+    transition: .5s;
+    z-index: 1;
+}
+
+.service-item:hover a.btn {
+    color: var(--main-blue);
+}
+
+.service-item a.btn::before {
+    position: absolute;
+    content: "";
+    width: 35px;
+    height: 35px;
+    top: 0;
+    left: 0;
+    border-radius: 35px;
+    background: #DDDDDD;
+    transition: .5s;
+    z-index: -1;
+}
+
+.service-item:hover a.btn::before {
+    width: 100%;
+    background: var(--light);
+}
+
