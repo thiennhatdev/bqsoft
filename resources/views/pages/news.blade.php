@@ -9,46 +9,51 @@ Danh sách tin
 @endsection
 
 @section('content')
-  <div class="news-list">
-    <div class="frame-parent24">
-      <div class="crumb6">
-        <div class="crumb7">
-          <div class="h00-17h003">
-            <img alt='icon-home' class='ic-home-breadcrum' src="{{ asset('images/icons/ic-home-breadcrum.svg') }}" />
-            <div>
-              <span>
-                <a href="{{ URL::route('homepage') }}">
-                  Trang chủ
-                </a>  
-              </span>
-              <img alt='arrow-right' src="{{ asset('images/icons/ic-arrow-breadcrum.svg') }}" />
-              <span class="jotun-ngoi-tht3">Danh sách tin</span>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="frame-parent25">
-        <div class="component-group">
-          @foreach($news as $item)
-            <div class="frame-wrapper">
-              <div class="thi-cong-son-nha-4-1-parent">
-                <div class="tiu-parent">
-                  <div class="tiu">
-                    <a href="{{ URL::route('news-detail', ['id' => $item->id, 'slug' => $item->slug]) }}" title="{{ $item->title }}">
-                      {{ $item->title }}
-                    </a>
-                  </div>
-                  <div class="b-trng-nguyn">
-                    {{ $item->description }}
-                  </div>
-                </div>
+ <!-- Navbar & Hero Start -->
+ <div class="container-xxl position-relative p-0">
+
+  <div class="container-xxl py-5 bg-main-blue hero-header mb-5">
+      <div class="container my-5 py-5 px-lg-5">
+          <div class="row g-5 py-5">
+              <div class="col-12 text-center">
+                  <h1 class="text-white animated zoomIn">Tin tức</h1>
+                  <hr class="bg-white mx-auto mt-0" style="width: 90px;">
+                  <nav aria-label="breadcrumb">
+                      <ol class="breadcrumb justify-content-center">
+                          <li class="breadcrumb-item"><a class="text-white" href="#">Home</a></li>
+                          <li class="breadcrumb-item"><a class="text-white" href="#">Pages</a></li>
+                          <li class="breadcrumb-item text-white active" aria-current="page">Service</li>
+                      </ol>
+                  </nav>
               </div>
-            </div>
-          @endforeach
-        </div>
+          </div>
       </div>
-      @include('components.pagination.default', ['paginator' => $news, 'link_limit' => 10])
-    </div>
-    <div class="news-list-child"></div>
   </div>
+</div>
+<!-- Navbar & Hero End -->
+
+
+<!-- Full Screen Search Start -->
+<div class="modal fade" id="searchModal" tabindex="-1">
+  <div class="modal-dialog modal-fullscreen">
+      <div class="modal-content" style="background: rgba(29, 29, 39, 0.7);">
+          <div class="modal-header border-0">
+              <button type="button" class="btn bg-white btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body d-flex align-items-center justify-content-center">
+              <div class="input-group" style="max-width: 600px;">
+                  <input type="text" class="form-control bg-transparent border-light p-3" placeholder="Type search keyword">
+                  <button class="btn btn-light px-4"><i class="bi bi-search"></i></button>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+<!-- Full Screen Search End -->
+
+
+<!-- News Start -->
+trang tin tức
+<!-- News End -->
+      
 @endsection

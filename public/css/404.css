@@ -1,32 +1,11 @@
-.not-found {
-    padding: 9rem 0;
-}
-.not-found div {
-    margin: 0 auto;
-    width: max-content;
-    text-align: center;
-}
-.not-found div h1 {
-    color: var(--red);
-    margin: 0;
-    font-size: 9rem;
-}
-
-.not-found div h2 {
-    color: var(--red);
-    border-top: 1px dashed;
-    padding: 1rem;
-    margin: 0;
-    font-weight: 200;
-}
-
-.not-found div button {
-    border: 2px solid;
-    padding: 0.4rem 1rem;
-    background: transparent;
-}
-
-.not-found div a {
-    color: #000;
-    text-decoration: underline;
+/*** Hero Header ***/
+.hero-header { 
+  background: url(../img/bg-bottom-hero.png), 
+  url(../img/thumbnail-top-left.svg), 
+  url(../img/thumbnail-right-bottom.svg), 
+  url(../img/thumbnail-left-bottom.svg), 
+  linear-gradient(to right, var(--main-green), var(--main-blue));
+  background-position: center bottom -1px, left -49px top -58px, bottom 18% right 0px, left -17% bottom -88px, left 0 bottom 0;
+  background-size: contain, 200px, 237px, 40%, cover;
+  background-repeat: no-repeat;
 }

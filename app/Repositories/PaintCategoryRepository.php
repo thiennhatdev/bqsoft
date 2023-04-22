@@ -22,16 +22,17 @@ class PaintCategoryRepository extends ModuleRepository
 
     public function allCategorys() 
     {
-        $list = $this->model
-                ->published()
-                ->get();
-        $arr = [];
-        foreach ($list as $value) {
-            array_push($arr, [
-                'value' => $value->id,
-                'label' => $value->title
-            ]);
-        };
-         return $arr;
+        // $list = $this->model
+        //         ->published()
+        //         ->get();
+        // $arr = [];
+        // foreach ($list as $value) {
+        //     array_push($arr, [
+        //         'value' => $value->id,
+        //         'label' => $value->title
+        //     ]);
+        // };
+        //  return $arr;
+        return [];
     }
 }
