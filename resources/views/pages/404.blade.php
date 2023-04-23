@@ -11,9 +11,9 @@ Không tìm thấy
 
 @section('content')
 <!-- Navbar & Hero Start -->
-<div class="container-xxl position-relative p-0">
+<div class="position-relative p-0">
 
-    <div class="container-xxl py-5 bg-main-blue hero-header mb-5">
+    <div class="py-5 bg-main-blue hero-header mb-5">
         <div class="container my-5 py-5 px-lg-5">
             <div class="row g-5 py-5">
                 <div class="col-12 text-center">
@@ -32,26 +32,6 @@ Không tìm thấy
     </div>
 </div>
 <!-- Navbar & Hero End -->
-
-
-<!-- Full Screen Search Start -->
-<div class="modal fade" id="searchModal" tabindex="-1">
-    <div class="modal-dialog modal-fullscreen">
-        <div class="modal-content" style="background: rgba(29, 29, 39, 0.7);">
-            <div class="modal-header border-0">
-                <button type="button" class="btn bg-white btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body d-flex align-items-center justify-content-center">
-                <div class="input-group" style="max-width: 600px;">
-                    <input type="text" class="form-control bg-transparent border-light p-3" placeholder="Type search keyword">
-                    <button class="btn btn-light px-4"><i class="bi bi-search"></i></button>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- Full Screen Search End -->
-
 
 <!-- 404 Start -->
 <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">

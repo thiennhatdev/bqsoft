@@ -11,8 +11,8 @@
         <div class="navbar-nav ms-auto py-0">
             <a href="{{ URL::route('homepage') }}" class="nav-item nav-link active">Trang chủ</a>
             <a href="{{ URL::route('about') }}" class="nav-item nav-link">Về chúng tôi</a>
-            <a href="{{ URL::route('services') }}" class="nav-item nav-link"> Dịch vụ</a>
-            <a href="{{ URL::route('projects') }}" class="nav-item nav-link">Dự án</a>
+            <a href="{{ URL::route('homepage') . '#our-services' }}" class="nav-item nav-link"> Dịch vụ</a>
+            <a href="{{ URL::route('homepage') . '#our-projects' }}" class="nav-item nav-link">Dự án</a>
             {{-- <div class="nav-item dropdown">
                 <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
                 <div class="dropdown-menu m-0">
@@ -21,7 +21,8 @@
                     <a href="404.html" class="dropdown-item">404 Page</a>
                 </div>
             </div> --}}
-            <a href="contact.html" class="nav-item nav-link">Bài viết</a>
+            <a href="{{ URL::route('homepage') . '#our-contact' }}" class="nav-item nav-link">Liên hệ</a>
+            <a href="{{ URL::route('news') }}" class="nav-item nav-link">Bài viết</a>
         </div>
         <button type="button" class="btn text-main-secondary ms-3" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fa fa-search"></i></button>
     </div>

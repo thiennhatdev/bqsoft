@@ -45,26 +45,6 @@ Trang chủ
   </div>
   <!-- Navbar & Hero End -->
 
-
-  <!-- Full Screen Search Start -->
-  <div class="modal fade" id="searchModal" tabindex="-1">
-      <div class="modal-dialog modal-fullscreen">
-          <div class="modal-content" style="background: rgba(29, 29, 39, 0.7);">
-              <div class="modal-header border-0">
-                  <button type="button" class="btn bg-white btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-              </div>
-              <div class="modal-body d-flex align-items-center justify-content-center">
-                  <div class="input-group" style="max-width: 600px;">
-                      <input type="text" class="form-control bg-transparent border-light p-3" placeholder="Nhập từ khóa">
-                      <button class="btn btn-light px-4"><i class="bi bi-search"></i></button>
-                  </div>
-              </div>
-          </div>
-      </div>
-  </div>
-  <!-- Full Screen Search End -->
-
-
   <!-- About Start -->
   <div class="container-xxl py-5">
       <div class="container px-lg-5">
@@ -103,88 +83,27 @@ Trang chủ
 
 
   <!-- Newsletter Start -->
-  <!-- <div class="container-xxl bg-main-blue newsletter my-5 wow fadeInUp" data-wow-delay="0.1s">
+  <div class="container-xxl bg-main-blue newsletter my-5 wow fadeInUp" data-wow-delay="0.1s">
       <div class="container px-lg-5">
           <div class="row align-items-center" style="height: 250px;">
               <div class="col-12 col-md-6">
-                  <h3 class="text-white">Ready to get started</h3>
-                  <small class="text-white">Diam elitr est dolore at sanctus nonumy.</small>
+                  <h3 class="text-white">Gửi những tin tức mới nhất đến email</h3>
+                  <small class="text-white">Những thông tin mới sẽ giúp nắm bắt được những cơ hội!</small>
                   <div class="position-relative w-100 mt-3">
-                      <input class="form-control border-0 rounded-pill w-100 ps-4 pe-5" type="text" placeholder="Enter Your Email" style="height: 48px;">
+                      <input class="form-control border-0 rounded-pill w-100 ps-4 pe-5" type="text" placeholder="Địa chỉ email của bạn" style="height: 48px;">
                       <button type="button" class="btn shadow-none position-absolute top-0 end-0 mt-1 me-2"><i class="fa fa-paper-plane text-main-blue fs-4"></i></button>
                   </div>
               </div>
               <div class="col-md-6 text-center mb-n5 d-none d-md-block">
-                  <img class="img-fluid mt-5" style="height: 250px;" src="img/newsletter.png">
+                  <img class="img-fluid mt-5" style="height: 250px;" src="img/thumbnail-send-letter.webp">
               </div>
           </div>
       </div>
-  </div> -->
+  </div>
   <!-- Newsletter End -->
 
-    <div class="container-xxl gtco-numbers-block">
-        <div class="container px-lg-5">
-            <div class=" position-relative"> 
-                <svg width="100%" viewBox="0 0 1600 400">
-                    <defs>
-                        <linearGradient id="PSgrad_03" x1="80.279%" x2="0%"  y2="0%">
-                            <stop offset="0%" stop-color="rgb(1,230,248)" stop-opacity="1" />
-                            <stop offset="100%" stop-color="rgb(29,62,222)" stop-opacity="1" />
-        
-                        </linearGradient>
-        
-                    </defs>
-                    <!-- <clipPath id="clip-path3">
-        
-                                                </clipPath> -->
-        
-                    <path fill-rule="evenodd"  fill="url(#PSgrad_03)"
-                            d="M98.891,386.002 L1527.942,380.805 C1581.806,380.610 1599.093,335.367 1570.005,284.353 L1480.254,126.948 C1458.704,89.153 1408.314,59.820 1366.025,57.550 L298.504,0.261 C238.784,-2.944 166.619,25.419 138.312,70.265 L16.944,262.546 C-24.214,327.750 12.103,386.317 98.891,386.002 Z"></path>
-        
-                    <clipPath id="ctm" fill="none">
-                        <path
-                                d="M98.891,386.002 L1527.942,380.805 C1581.806,380.610 1599.093,335.367 1570.005,284.353 L1480.254,126.948 C1458.704,89.153 1408.314,59.820 1366.025,57.550 L298.504,0.261 C238.784,-2.944 166.619,25.419 138.312,70.265 L16.944,262.546 C-24.214,327.750 12.103,386.317 98.891,386.002 Z"></path>
-                    </clipPath>
-        
-                    <!-- xlink:href for modern browsers, src for IE8- -->
-                    <image  clip-path="url(#ctm)" xlink:href="img/word-map.png" height="800px" width="100%" class="svg__image">
-        
-                    </image>
-        
-                </svg>
-                <div class="row">
-                    <div class="col-4">
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title">125+</h5>
-                                <p class="card-text">Dự án đang triển khai</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-4">
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title">530+</h5>
-                                <p class="card-text">Dự án đã hoàn thành</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-4">
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title">941+</h5>
-                                <p class="card-text">Khách hàng</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
   <!-- Service Start -->
-  <div class="container-xxl py-5">
+  <div class="container-xxl py-5" id="our-services">
       <div class="container px-lg-5">
           <div class="section-title position-relative text-center mb-5 pb-2 wow fadeInUp" data-wow-delay="0.1s">
               <h6 class="position-relative d-inline text-main-blue ps-4">Dịch vụ của chúng tôi</h6>
@@ -258,7 +177,7 @@ Trang chủ
 
 
   <!-- Portfolio Start -->
-  <div class="container-xxl py-5">
+  <div class="container-xxl py-5" id="our-projects">
       <div class="container px-lg-5">
           <div class="section-title position-relative text-center mb-5 pb-2 wow fadeInUp" data-wow-delay="0.1s">
               <h6 class="position-relative d-inline text-main-blue ps-4">Dự án của chúng tôi</h6>
@@ -473,16 +392,50 @@ Trang chủ
   <!-- Team End -->
 
   <!-- Contact Start -->
-  <div class="container-xxl">
-    <div class="section-title position-relative text-center mb-5 pb-2 wow fadeInUp" data-wow-delay="0.1s">
-        <h6 class="position-relative d-inline text-main-blue ps-4">Liên hệ</h6>
-        <h2 class="mt-2">Chúng tôi sẽ trả lời chậm nhất trong vòng 24h</h2>
+  <div class="container-xxl py-5" id="our-contact">
+    <div class="container px-lg-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-7">
+                <div class="section-title position-relative text-center mb-5 pb-2 wow fadeInUp" data-wow-delay="0.1s">
+                    <h6 class="position-relative d-inline text-main-blue ps-4">Contact Us</h6>
+                    <h2 class="mt-2">Contact For Any Query</h2>
+                </div>
+                <div class="wow fadeInUp" data-wow-delay="0.3s">
+                    <form>
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control" id="name" placeholder="Your Name">
+                                    <label for="name">Your Name</label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <input type="email" class="form-control" id="email" placeholder="Your Email">
+                                    <label for="email">Your Email</label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control" id="subject" placeholder="Subject">
+                                    <label for="subject">Subject</label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-floating">
+                                    <textarea class="form-control" placeholder="Leave a message here" id="message" style="height: 150px"></textarea>
+                                    <label for="message">Message</label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <button class="btn btn-main-blue w-100 py-3" type="submit">Send Message</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
     </div>
-      <div class="col-lg-6 offset-lg-3" id="contact">
-          <input type="text" class="form-control" placeholder="Full Name">
-          <input type="email" class="form-control" placeholder="Email Address">
-          <textarea class="form-control" rows="5" placeholder="Message"></textarea>
-      </div>
   </div>
   <!-- Contact End -->
 
@@ -495,7 +448,6 @@ Trang chủ
 @section('script')
   <!-- JavaScript Libraries -->
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
   <script src="{{ asset('/lib/wow/wow.min.js') }}"></script>
   <script src="{{ asset('/lib/easing/easing.min.js') }}"></script>
   <script src="{{ asset('/lib/waypoints/waypoints.min.js') }}"></script>
