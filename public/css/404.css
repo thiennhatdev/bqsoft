@@ -1,11 +1,9 @@
 /*** Hero Header ***/
 .hero-header { 
-  background: url(../img/bg-bottom-hero.png), 
-  url(../img/thumbnail-top-left.svg), 
-  url(../img/thumbnail-right-bottom.svg), 
-  url(../img/thumbnail-left-bottom.svg), 
+  background: url(../img/bg-bottom-hero.webp), 
+  url(../img/thumbnail-left-bottom.webp), 
   linear-gradient(to right, var(--main-green), var(--main-blue));
-  background-position: center bottom -1px, left -49px top -58px, bottom 18% right 0px, left -17% bottom -88px, left 0 bottom 0;
-  background-size: contain, 200px, 237px, 40%, cover;
+  background-position: left 0 bottom 0px, left -17% bottom -99px, left 0 bottom 0px;
+  background-size: contain, 40%, cover;
   background-repeat: no-repeat;
 }

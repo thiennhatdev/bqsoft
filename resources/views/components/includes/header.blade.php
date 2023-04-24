@@ -9,9 +9,9 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarCollapse">
         <div class="navbar-nav ms-auto py-0">
-            <a href="{{ URL::route('homepage') }}" class="nav-item nav-link active">Trang chủ</a>
-            <a href="{{ URL::route('about') }}" class="nav-item nav-link">Về chúng tôi</a>
-            <a href="{{ URL::route('homepage') . '#our-services' }}" class="nav-item nav-link"> Dịch vụ</a>
+            <a href="{{ URL::route('homepage') }}" class="nav-item nav-link {{ Route::currentRouteNamed( 'homepage' ) ?  'active' : '' }}">Trang chủ</a>
+            <a href="{{ URL::route('about') }}" class="nav-item nav-link {{ Route::currentRouteNamed( 'about' ) ?  'active' : '' }}">Về chúng tôi</a>
+            <a href="{{ URL::route('homepage') . '#our-services' }}" class="nav-item nav-link "> Dịch vụ</a>
             <a href="{{ URL::route('homepage') . '#our-projects' }}" class="nav-item nav-link">Dự án</a>
             {{-- <div class="nav-item dropdown">
                 <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
@@ -22,7 +22,7 @@
                 </div>
             </div> --}}
             <a href="{{ URL::route('homepage') . '#our-contact' }}" class="nav-item nav-link">Liên hệ</a>
-            <a href="{{ URL::route('news') }}" class="nav-item nav-link">Bài viết</a>
+            <a href="{{ URL::route('news') }}" class="nav-item nav-link {{ Route::currentRouteNamed( 'news' ) ?  'active' : '' }}">Bài viết</a>
         </div>
         <button type="button" class="btn text-main-secondary ms-3" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fa fa-search"></i></button>
     </div>

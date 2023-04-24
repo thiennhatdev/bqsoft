@@ -12,33 +12,32 @@ Giới thiệu công ty
 @section('content')
  <!-- Navbar & Hero Start -->
  <div class="position-relative p-0">
-  <div class="py-5 bg-main-blue hero-header mb-5">
-      <div class="container my-5 py-5 px-lg-5">
-          <div class="row g-5 py-5">
-              <div class="col-12 text-center">
-                  <h1 class="text-white animated zoomIn">About Us</h1>
-                  <hr class="bg-white mx-auto mt-0" style="width: 90px;">
+    <div class="py-5 bg-main-blue hero-header">
+        <div class="container my-lg-5 py-md-5 px-lg-5">
+            <div class=" g-5 py-5">
+              <div class="col-12">
+                  <h1 class="text-white animated zoomIn">Tin tức</h1>
+                  <hr class="bg-white mt-0" style="width: 90px;">
                   <nav aria-label="breadcrumb">
-                      <ol class="breadcrumb justify-content-center">
-                          <li class="breadcrumb-item"><a class="text-white" href="#">Home</a></li>
-                          <li class="breadcrumb-item"><a class="text-white" href="#">Pages</a></li>
-                          <li class="breadcrumb-item text-white active" aria-current="page">About</li>
+                      <ol class="breadcrumb">
+                          <li class="breadcrumb-item"><a class="text-white" href="#">Trang chủ</a></li>
+                          <li class="breadcrumb-item"><a class="text-white" href="#">Danh sách bài viết</a></li>
+                          <li class="breadcrumb-item text-white active" aria-current="page">Chi tiết bài viết</li>
                       </ol>
                   </nav>
               </div>
-          </div>
-      </div>
+            </div>
+        </div>
+    </div>
   </div>
-</div>
-<!-- Navbar & Hero End -->
-
+  <!-- Navbar & Hero End -->
+  
 <!-- About Start -->
 <div class="container-xxl py-5">
   <div class="container px-lg-5">
       <div class="row g-5">
           <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
               <div class="section-title position-relative mb-4 pb-2">
-                  <h6 class="position-relative text-main-blue ps-4">About Us</h6>
                   <h2 class="mt-2">The best SEO solution with 10 years of experience</h2>
               </div>
               <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum et tempor sit. Aliqu diam amet diam et eos labore. Clita erat ipsum et lorem et sit, sed stet no labore lorem sit. Sanctus clita duo justo et tempor eirmod magna dolore erat amet</p>

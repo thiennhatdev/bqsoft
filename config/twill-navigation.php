@@ -1,6 +1,10 @@
 <?php
 
 return [
+    'services' => [
+        'title' => 'Dịch vụ',
+        'module' => true
+    ],
     'projects' => [
         'title' => 'Dự án',
         'module' => true
@@ -9,12 +13,16 @@ return [
         'title' => 'Tin tức',
         'module' => true
     ],
-    'paints' => [
-        'title' => 'Sơn',
+    'contacts' => [
+        'title' => 'Liên hệ',
         'module' => true
     ],
-    'paintCategories' => [
-        'title' => 'Loại sơn',
+    'emails' => [
+        'title' => 'Email',
+        'module' => true
+    ],
+    'reviews' => [
+        'title' => 'Đánh giá',
         'module' => true
     ],
     'abouts' => [

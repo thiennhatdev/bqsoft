@@ -10,29 +10,19 @@ Không tìm thấy
 
 
 @section('content')
-<!-- Navbar & Hero Start -->
-<div class="position-relative p-0">
-
-    <div class="py-5 bg-main-blue hero-header mb-5">
-        <div class="container my-5 py-5 px-lg-5">
-            <div class="row g-5 py-5">
-                <div class="col-12 text-center">
-                    <h1 class="text-white animated zoomIn">Not Found</h1>
-                    <hr class="bg-white mx-auto mt-0" style="width: 90px;">
-                    <nav aria-label="breadcrumb">
-                        <ol class="breadcrumb justify-content-center">
-                            <li class="breadcrumb-item"><a class="text-white" href="#">Home</a></li>
-                            <li class="breadcrumb-item"><a class="text-white" href="#">Pages</a></li>
-                            <li class="breadcrumb-item text-white active" aria-current="page">404</li>
-                        </ol>
-                    </nav>
-                </div>
+ <!-- Navbar & Hero Start -->
+ <div class="position-relative p-0">
+    <div class="py-5 bg-main-blue hero-header">
+        <div class="container my-lg-5 py-md-5 px-lg-5">
+            <div class=" g-5 py-5">
+              <div class="col-12 py-5">
+              </div>
             </div>
         </div>
     </div>
-</div>
-<!-- Navbar & Hero End -->
-
+  </div>
+  <!-- Navbar & Hero End -->
+  
 <!-- 404 Start -->
 <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
     <div class="container px-lg-5 text-center">

@@ -26,6 +26,17 @@ li {
 	list-style-type: none;
 }
 
+/* custome style for element bootstrap */
+.card,
+.rounded,
+.form-control {
+	border-radius: 4px !important;
+}
+.btn {
+	border-radius: 4px;
+}
+/* custome style for element bootstrap */
+
 /* style for phone call button */
 
 .btn-phone-call {
