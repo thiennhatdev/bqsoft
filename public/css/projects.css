@@ -5,7 +5,7 @@
   url(../img/thumbnail-right-bottom.svg), 
   url(../img/thumbnail-left-bottom.svg), 
   linear-gradient(to right, var(--main-green), var(--main-blue));
-  background-position: center bottom -1px, left -49px top -58px, bottom 18% right 0px, left -17% bottom -88px, left 0 bottom 0;
+  background-position: center bottom -1px, left -49px top -58px, bottom 73% right -14%, left -17% bottom -99px, left 0 bottom 1px;
   background-size: contain, 200px, 237px, 40%, cover;
   background-repeat: no-repeat;
 }

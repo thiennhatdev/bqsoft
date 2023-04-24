@@ -23,9 +23,9 @@ class NewsController extends Controller
     public function detail() 
     {
         $news_detail = $this->newsRepository->newsDetail($this->request->id);
-        if (empty($news_detail)) {
-            return redirect()->route('404');
-        }
+        // if (empty($news_detail)) {
+        //     return redirect()->route('404');
+        // }
         $recent_news = $this->newsRepository->recentNews($this->request->id);
         return view('pages.news-detail', [
             'news_detail' => $news_detail,

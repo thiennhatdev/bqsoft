@@ -1,78 +1,53 @@
 @extends('layouts.default')
 
 @section('title')
-{{ $news_detail->title }}
+{{-- {{ $news_detail->title }} --}}
 @endsection
 
 @section('head')
-  <meta name="description" content="{!! Str::words($news_detail->description, 150)  !!}"/>
-  <meta property="og:title" content="{{ $news_detail->title }}" />
-  <meta property="og:description" content="{!! Str::words($news_detail->description, 150)  !!}" />
-  <meta property="og:site_name" content="{{ $news_detail->title }}" />
+  {{-- <meta name="description" content="{!! Str::words($news_detail->description, 150)  !!}"/> --}}
+  {{-- <meta property="og:title" content="{{ $news_detail->title }}" /> --}}
+  {{-- <meta property="og:description" content="{!! Str::words($news_detail->description, 150)  !!}" /> --}}
+  {{-- <meta property="og:site_name" content="{{ $news_detail->title }}" /> --}}
 
   <link href="{{ asset('/css/news-detail.css') }}" rel="stylesheet" />
 @endsection
 
 @section('content')
-  <div class="news-detail">
-    <div class="news-detail-content-parent">
-      <div class="crumb4">
-        <div class="crumb5">
-          <div class="h00-17h002">
-            <img alt='icon-home' class='ic-home-breadcrum' src="{{ asset('images/icons/ic-home-breadcrum.svg') }}" />
-            <div>
-              <span>
-                <a href="{{ URL::route('homepage') }}">
-                  Trang chủ
-                </a>  
-              </span>
-              <img alt='arrow-right' src="{{ asset('images/icons/ic-arrow-breadcrum.svg') }}" />
-              <span class="jotun-ngoi-tht3">
-                <a href="{{ URL::route('news') }}">
-                  Tin tức
-                </a>
-              </span>
-              <img alt='arrow-right' src="{{ asset('images/icons/ic-arrow-breadcrum.svg') }}" />
-              <span class="jotun-ngoi-tht2"> {{ $news_detail->title }}</span>
+ <!-- Navbar & Hero Start -->
+ <div class="position-relative p-0">
+  <div class="py-5 bg-main-blue hero-header">
+      <div class="container my-lg-5 py-md-5 px-lg-5">
+          <div class=" g-5 py-5">
+            <div class="col-12">
+                <h1 class="text-white animated zoomIn">Tin tức</h1>
+                <hr class="bg-white mt-0" style="width: 90px;">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a class="text-white" href="#">Trang chủ</a></li>
+                        <li class="breadcrumb-item"><a class="text-white" href="#">Danh sách bài viết</a></li>
+                        <li class="breadcrumb-item text-white active" aria-current="page">Chi tiết bài viết</li>
+                    </ol>
+                </nav>
             </div>
           </div>
-        </div>
       </div>
-      <div class="news-detail-content">
-        <div class="news-detail-content-inner">
-          <div class="cng-ngh-cht-to-mu-tin-ti-parent">
-            <div class="cng-ngh-cht">
-              {{ $news_detail->title }}
-            </div>
-            <div class="tashield-l-mt-container">
-              {!! $news_detail->renderBlocks() !!}
-            </div>
-          </div>
-        </div>
-        <div class="title-sp-cungloai-parent">
-          <div class="title-sp-cungloai">
-            <div class="cc-sn-phm">Các tin gần đây</div>
-          </div>
-          <div class="group-parent">
-            @foreach($recent_news as $item)
-              <div class="rectangle-container">
-                <div class="group-container">
-                  <div class="sn-jotun-cht-lng-vt-tri-parent">
-                    <div class="sn-jotun-cht">
-                      {{ $item->description }}
-                    </div>
-                    <div class="sn-jotun-p">
-                      <a href="{{ URL::route('news-detail', ['id' => $item->id, 'slug' => $item->slug]) }}" title="{{ $item->title }}">
-                        {{ $item->title }}
-                      </a>
-                    </div>
-                  </div>
+  </div>
+</div>
+<!-- Navbar & Hero End -->
+
+<!-- News Start -->
+<div class="container-xxl py-5">
+    <div class="container px-lg-5">
+        <div class="row g-5">
+            <div class="col-12 wow fadeInUp" data-wow-delay="0.1s">
+                <div class='row g-4'>
+                    chi tiet tin
                 </div>
-              </div>
-            @endforeach
-          </div>
+            </div>
         </div>
-      </div>
     </div>
   </div>
+<!-- News End -->
+      
 @endsection

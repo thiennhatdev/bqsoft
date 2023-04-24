@@ -10,56 +10,39 @@ Tìm kiếm
 
 
 @section('content')
-    <div class='search-outer'>
-        <div class="crumb6">
-            <div class="crumb7">
-            <div class="h00-17h003">
-                <img alt='icon-home' class='ic-home-breadcrum' src="{{ asset('images/icons/ic-home-breadcrum.svg') }}" />
-                <div>
-                <span>
-                    <a href="{{ URL::route('homepage') }}">
-                    Trang chủ
-                    </a>  
-                </span>
-                <img alt='arrow-right' src="{{ asset('images/icons/ic-arrow-breadcrum.svg') }}" />
-                <span class="jotun-ngoi-tht3">Tìm kiếm: {{ request()->route('slug') }}</span>
+    <!-- Navbar & Hero Start -->
+    <div class="position-relative p-0">
+        <div class="py-5 bg-main-blue hero-header">
+            <div class="container my-lg-5 py-md-5 px-lg-5">
+                <div class=" g-5 py-5">
+                <div class="col-12">
+                    <h1 class="text-white animated zoomIn">Trang tìm kiếm</h1>
+                    <hr class="bg-white mt-0" style="width: 90px;">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a class="text-white" href="#">Trang chủ</a></li>
+                            <li class="breadcrumb-item"><a class="text-white" href="#">Bài viết</a></li>
+                            <li class="breadcrumb-item text-white active" aria-current="page">Tìm kiếm với từ khóa: sdfsdf</li>
+                        </ol>
+                    </nav>
+                </div>
                 </div>
             </div>
-            </div>
         </div>
-        <div>
-            <div>
-                @if($results->isEmpty())
-                    <h1 class='result-empty'>Không tìm thấy kết quả</h1>
-                @else
-                    <div class='wrap-search'>
-                        @foreach($results as $paint)
-                            <div class="product-list__item ">
-                                <div class="product frame-parent44 ">
-                                <div class="rectangle-parent11">
-                                    <img
-                                    class="frame-child12"
-                                    alt="{{ $paint->title }}"
-                                    src="{{ $paint->image('thumbnail', 'default') }}"
-                                    />
-                                </div>
-                                <a href="{{ URL::route('paint-detail', ['id' => $paint->id, 'slug' => $paint->slug]) }}" class="sn-alex-ngoi4" title="{{ $paint->title }}">
-                                    {{ $paint->title }}
-                                </a>
-                                <div class='product-specifications-color'>
-                                    <div class='product-specifications'>{{ $paint->specifications }}</div>
-                                    <div class='product-color'>{{ $paint->color }}</div>
-                                </div>
-                                <div class="frame4">
-                                    <div class="logo10">{{ number_format($paint->sell_price, 0, '.', '.') }} vnđ</div>
-                                </div>
-                                </div>
-                            </div>
-                        @endforeach
-                    </div>
-                @endif
-                </div>
-        </div>
-        @include('components.pagination.default', ['paginator' => $results, 'link_limit' => 10])
     </div>
+    <!-- Navbar & Hero End -->
+  
+    <!-- Search Start -->
+    <div class="container-xxl py-5">
+        <div class="container px-lg-5">
+            <div class="row g-5">
+                <div class="col-12 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class='row g-4'>
+                        Trang tìm kiếm
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Search End -->
 @endsection

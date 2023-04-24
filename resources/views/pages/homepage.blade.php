@@ -83,7 +83,7 @@ Trang chủ
 
 
   <!-- Newsletter Start -->
-  <div class="container-xxl bg-main-blue newsletter my-5 wow fadeInUp" data-wow-delay="0.1s">
+  <div class="bg-main-blue newsletter my-5 wow fadeInUp" data-wow-delay="0.1s">
       <div class="container px-lg-5">
           <div class="row align-items-center" style="height: 250px;">
               <div class="col-12 col-md-6">
@@ -447,15 +447,8 @@ Trang chủ
 
 @section('script')
   <!-- JavaScript Libraries -->
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-  <script src="{{ asset('/lib/wow/wow.min.js') }}"></script>
   <script src="{{ asset('/lib/easing/easing.min.js') }}"></script>
   <script src="{{ asset('/lib/waypoints/waypoints.min.js') }}"></script>
-  <script src="{{ asset('/lib/owlcarousel/owl.carousel.min.js') }}"></script>
-  <script src="{{ asset('/lib/isotope/isotope.pkgd.min.js') }}"></script>
   <script src="{{ asset('/lib/lightbox/js/lightbox.min.js') }}"></script>
-
-  <!-- Template Javascript -->
-  <script src="{{ asset('/js/main.js') }}"></script>
 
 @endsection
