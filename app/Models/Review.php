@@ -18,6 +18,8 @@ class Review extends Model implements Sortable
     protected $fillable = [
         'published',
         'title',
+        'customer_name',
+        'customer_career_title',
         'description',
         'position',
     ];
@@ -27,7 +29,7 @@ class Review extends Model implements Sortable
     ];
     
     public $mediasParams = [
-        'cover' => [
+        'customer_avatar' => [
             'default' => [
                 [
                     'name' => 'default',
