@@ -27,7 +27,7 @@ class Service extends Model implements Sortable
     ];
     
     public $mediasParams = [
-        'cover' => [
+        'services_icon' => [
             'default' => [
                 [
                     'name' => 'default',

@@ -8,8 +8,8 @@ class ServicesController extends Controller
 {
     public function index() 
     {
-        return view('pages.services', [
-            'services' => []
+        return view('pages.services-detail', [
+            'services-detail' => []
         ]);
     }
 }

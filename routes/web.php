@@ -20,6 +20,6 @@ Route::name('about')->get('/thong-tin.html', 'App\Http\Controllers\AboutControll
 Route::name('action-search')->post('/tim-kiem', 'App\Http\Controllers\PageController@action_search');
 Route::name('search')->get('/tim-kiem/{slug}.html', 'App\Http\Controllers\PageController@search');
 Route::name('404')->get('/khong-tim-thay', 'App\Http\Controllers\PageController@notfound');
+Route::name('services-detail')->get('/dich-vu/{slug}-{id}.html', 'App\Http\Controllers\ServicesController@index');
 // Route::name('projects')->get('/du-an.html', 'App\Http\Controllers\ProjectController@list');
-// Route::name('services')->get('/dich-vu.html', 'App\Http\Controllers\ServicesController@index');
 

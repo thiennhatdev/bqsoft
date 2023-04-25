@@ -39,7 +39,7 @@ Danh sách tin
             <div class="col-12 wow fadeInUp" data-wow-delay="0.1s">
                 <div class='row g-4'>
                     <div class="col-md-6">
-                        <div class="card">
+                        <div class="card shadow-sm border-0">
                             <div class="card-body">
                                 <a href="#" class='text-dark'>
                                     <h5 class="card-title">

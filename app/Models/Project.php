@@ -19,8 +19,7 @@ class Project extends Model implements Sortable
         'published',
         'title',
         'description',
-        'acreage',
-        'completion_time',
+        'link',
         'position',
     ];
     
