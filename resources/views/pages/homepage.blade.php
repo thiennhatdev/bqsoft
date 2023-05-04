@@ -32,9 +32,9 @@ Trang chủ
           <div class="container my-5 py-5 px-lg-5">
               <div class="row flex-column-reverse flex-lg-row g-5 py-5">
                   <div class="col-lg-6 text-center text-lg-start">
-                      <h1 class="text-white mb-4 animated zoomIn">All in one SEO tool need to grow your business rapidly</h1>
-                      <p class="text-white pb-3 animated zoomIn">Tempor rebum no at dolore lorem clita rebum rebum ipsum rebum stet dolor sed justo kasd. Ut dolor sed magna dolor sea diam. Sit diam sit justo amet ipsum vero ipsum clita lorem</p>
-                      <a href="" class="btn btn-light py-sm-3 px-sm-5 rounded-pill me-3 animated slideInLeft">Liên Hệ Ngay</a>
+                      <h1 class="text-white mb-4 animated zoomIn">Cung cấp giải pháp chuyển đổi số tốt nhất !</h1>
+                      <p class="text-white pb-3 animated zoomIn">Chuyển đổi ý tưởng thành hiện thực trên nền tảng số, hãy để chúng tôi giúp bạn.</p>
+                      <a href="" class="btn btn-light py-sm-3 px-sm-5 rounded-pill me-3 animated slideInLeft mt-5">Liên Hệ Ngay</a>
                   </div>
                   <div class="col-lg-6 offset-lg-0 col-8 offset-2 text-center text-lg-start">
                       <img class="img-fluid" src="img/thiet-ke-web.webp" alt="thiet ke web">
@@ -55,9 +55,9 @@ Trang chủ
               <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
                   <div class="section-title position-relative mb-4 pb-2">
                       <h6 class="position-relative text-main-blue ps-4">Về chúng tôi</h6>
-                      <h2 class="mt-2">Với hơn 10 năm kinh nghiệm trong lĩnh vực chuyển đổi số</h2>
+                      <h2 class="mt-2">Chúng tôi là nhà cung cấp hàng đầu các giải pháp chuyển đổi kỹ thuật số.</h2>
                   </div>
-                  <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum et tempor sit. Aliqu diam amet diam et eos labore. Clita erat ipsum et lorem et sit, sed stet no labore lorem sit. Sanctus clita duo justo et tempor eirmod magna dolore erat amet</p>
+                  <p class="mb-4">Với kinh nghiệm và chuyên môn của đội ngũ chuyên gia, chúng tôi cam kết cung cấp các giải pháp tốt nhất cho khách hàng, từ phân tích, đánh giá nhu cầu đến thiết kế và triển khai hệ thống. Chúng tôi tin rằng chuyển đổi kỹ thuật số có thể giúp các công ty tiết kiệm thời gian và tiền bạc, tăng hiệu quả và cải thiện khả năng cạnh tranh trên thị trường.</p>
                   <div class="row g-3">
                       <div class="col-sm-6">
                           <h6 class="mb-3"><i class="fa fa-check text-main-blue me-2"></i>Lấy khách hàng là trung tâm</h6>
@@ -123,7 +123,7 @@ Trang chủ
               <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.3s">
                   <div class="service-item d-flex flex-column justify-content-center text-center rounded">
                       <div class="service-icon flex-shrink-0">
-                        <img alt='icon website' src="{{ asset('img/icon-desktop.png') }}" />
+                        <img alt='icon website' src="{{ asset('img/icon-website.webp') }}" />
                       </div>
                       <h5 class="mb-3">Thiết kế website</h5>
                       <p>Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
@@ -153,7 +153,7 @@ Trang chủ
               <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.3s">
                   <div class="service-item d-flex flex-column justify-content-center text-center rounded">
                       <div class="service-icon flex-shrink-0">
-                          <i class="fa fa-home fa-2x"></i>
+                        <img alt='icon desktop' src="{{ asset('img/icon-desktop.png') }}" />
                       </div>
                       <h5 class="mb-3">Xây dựng ứng dụng desktop</h5>
                       <p>Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
@@ -163,9 +163,9 @@ Trang chủ
               <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.6s">
                   <div class="service-item d-flex flex-column justify-content-center text-center rounded">
                       <div class="service-icon flex-shrink-0">
-                          <i class="fa fa-home fa-2x"></i>
+                        <img alt='icon tool' src="{{ asset('img/icon-tool.webp') }}" />
                       </div>
-                      <h5 class="mb-3">App Development</h5>
+                      <h5 class="mb-3">Tool hỗ trợ</h5>
                       <p>Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
                       <a class="btn px-3 mt-auto mx-auto" href="">Read More</a>
                   </div>
@@ -397,38 +397,44 @@ Trang chủ
         <div class="row justify-content-center">
             <div class="col-lg-7">
                 <div class="section-title position-relative text-center mb-5 pb-2 wow fadeInUp" data-wow-delay="0.1s">
-                    <h6 class="position-relative d-inline text-main-blue ps-4">Contact Us</h6>
-                    <h2 class="mt-2">Contact For Any Query</h2>
+                    <h6 class="position-relative d-inline text-main-blue ps-4">Liên hệ</h6>
+                    <h2 class="mt-2">Chúng tôi sẽ liên hệ lại chậm nhất trong vòng 24h</h2>
                 </div>
                 <div class="wow fadeInUp" data-wow-delay="0.3s">
                     <form>
                         <div class="row g-3">
                             <div class="col-md-6">
                                 <div class="form-floating">
-                                    <input type="text" class="form-control" id="name" placeholder="Your Name">
-                                    <label for="name">Your Name</label>
+                                    <input type="text" class="form-control" id="name" placeholder="Tên của bạn">
+                                    <label for="name">Tên của bạn</label>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-floating">
-                                    <input type="email" class="form-control" id="email" placeholder="Your Email">
-                                    <label for="email">Your Email</label>
+                                    <input type="email" class="form-control" id="email" placeholder="Email của bạn">
+                                    <label for="email">Email của bạn</label>
                                 </div>
                             </div>
                             <div class="col-12">
                                 <div class="form-floating">
-                                    <input type="text" class="form-control" id="subject" placeholder="Subject">
-                                    <label for="subject">Subject</label>
+                                    <input type="select" class="form-control" id="subject" placeholder="Ngân sách">
+                                    <label for="subject">Ngân sách</label>
                                 </div>
                             </div>
                             <div class="col-12">
                                 <div class="form-floating">
-                                    <textarea class="form-control" placeholder="Leave a message here" id="message" style="height: 150px"></textarea>
-                                    <label for="message">Message</label>
+                                    <input type="text" class="form-control" id="subject" placeholder="Tiêu đề">
+                                    <label for="subject">Tiêu đề</label>
                                 </div>
                             </div>
                             <div class="col-12">
-                                <button class="btn btn-main-blue w-100 py-3" type="submit">Send Message</button>
+                                <div class="form-floating">
+                                    <textarea class="form-control" placeholder="Nhập yêu cầu" id="message" style="height: 150px"></textarea>
+                                    <label for="message">Yêu cầu của bạn</label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <button class="btn btn-main-blue w-100 py-3" type="submit">Gửi</button>
                             </div>
                         </div>
                     </form>
