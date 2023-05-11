@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
-  <div class="container-xxl px-lg-5">
+  <div class="container-xxl px-lg-5 position-relative">
     <a href="" class="navbar-brand p-0">
         <h1 class="m-0"><i class="fa fa-search me-2"></i>SEO<span class="fs-5">Master</span></h1>
         <!-- <img src="img/logo.png" alt="Logo"> -->
@@ -7,7 +7,7 @@
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
         <span class="fa fa-bars"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarCollapse">
+    <div class="collapse navbar-collapse " id="navbarCollapse">
         <div class="navbar-nav ms-auto py-0">
             <a href="{{ URL::route('homepage') }}" class="nav-item nav-link {{ Route::currentRouteNamed( 'homepage' ) ?  'active' : '' }}">Trang chủ</a>
             <a href="{{ URL::route('about') }}" class="nav-item nav-link {{ Route::currentRouteNamed( 'about' ) ?  'active' : '' }}">Về chúng tôi</a>
