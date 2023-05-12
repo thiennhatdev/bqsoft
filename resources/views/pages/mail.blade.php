@@ -1,0 +1,1 @@
+content email in blade file

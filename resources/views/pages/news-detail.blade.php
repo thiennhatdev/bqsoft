@@ -24,8 +24,8 @@
                 <hr class="bg-white mt-0" style="width: 90px;">
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a class="text-white" href="#">Trang chủ</a></li>
-                        <li class="breadcrumb-item"><a class="text-white" href="#">Danh sách bài viết</a></li>
+                        <li class="breadcrumb-item"><a class="text-white" href="{{ URL::route('homepage') }}">Trang chủ</a></li>
+                        <li class="breadcrumb-item"><a class="text-white" href="{{ URL::route('news') }}">Danh sách bài viết</a></li>
                         <li class="breadcrumb-item text-white active" aria-current="page">Chi tiết bài viết</li>
                     </ol>
                 </nav>
@@ -42,7 +42,13 @@
         <div class="row g-5">
             <div class="col-12 wow fadeInUp" data-wow-delay="0.1s">
                 <div class='row g-4'>
-                    chi tiet tin
+                    <h1>{{ $news_detail->title }}</h1>
+                    <div class='content-of-table'>
+                        {!! $menu !!}
+                    </div>
+                    <div class='news-detail-body'>
+                        {!! $body !!}
+                    </div>
                 </div>
             </div>
         </div>

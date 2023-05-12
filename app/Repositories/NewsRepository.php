@@ -10,6 +10,7 @@ use A17\Twill\Repositories\Behaviors\HandleFiles;
 use A17\Twill\Repositories\Behaviors\HandleRevisions;
 use A17\Twill\Repositories\ModuleRepository;
 use App\Models\News;
+use Mail;
 
 class NewsRepository extends ModuleRepository
 {
@@ -56,4 +57,15 @@ class NewsRepository extends ModuleRepository
             ->take(5);
         return $recent_news;
     }
+
+    public function prepareFieldsBeforeCreate($fields)
+    {
+        // return response()->json($object, 200);
+        Mail::send('pages.mail', array('name'=>'nhat', 'email' => 'gggg@gmail.com'), function($message){
+	        $message->to('vhtn1993@gmail.com', 'Visitor')->subject('Send mail sau khi tạo');
+	    });
+        // dd($fields);
+        return parent::prepareFieldsBeforeCreate($fields);
+    }
+   
 }

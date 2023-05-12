@@ -3,7 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Session;
 use App\Repositories\ProjectRepository;
+use Mail;
 
 class PageController extends Controller
 {
@@ -40,5 +42,15 @@ class PageController extends Controller
         return view('pages.404', [
             
         ]);
+    }
+
+    public function saveMail(Request $request)
+    {
+        // $input = $request->all();
+        // Mail::send('pages.mail', array('email'=>$input["email"]), function($message){
+	    //     $message->to('vhtn1993@gmail.com', 'Visitor')->subject('Visitor Feedback!');
+	    // });
+        // echo "Successfully sent the email";
+        // Session::flash('flash_message', 'Send message successfully!');
     }
 }

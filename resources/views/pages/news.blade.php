@@ -19,9 +19,8 @@ Danh sách tin
                   <hr class="bg-white mt-0" style="width: 90px;">
                   <nav aria-label="breadcrumb">
                       <ol class="breadcrumb">
-                          <li class="breadcrumb-item"><a class="text-white" href="#">Trang chủ</a></li>
-                          <li class="breadcrumb-item"><a class="text-white" href="#">Danh sách bài viết</a></li>
-                          <li class="breadcrumb-item text-white active" aria-current="page">Chi tiết bài viết</li>
+                          <li class="breadcrumb-item"><a class="text-white" href="{{ URL::route('homepage') }}">Trang chủ</a></li>
+                          <li class="breadcrumb-item"><a class="text-white" href="{{ URL::route('news') }}">Danh sách bài viết</a></li>
                       </ol>
                   </nav>
               </div>
@@ -38,126 +37,22 @@ Danh sách tin
         <div class="row g-5">
             <div class="col-12 wow fadeInUp" data-wow-delay="0.1s">
                 <div class='row g-4'>
-                    <div class="col-md-6">
-                        <div class="card shadow-sm border-0">
-                            <div class="card-body">
-                                <a href="#" class='text-dark'>
-                                    <h5 class="card-title">
-                                        Danger card title
-                                    </h5>
-                                </a>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    @foreach($news as $new)
+                        <div class="col-md-6">
+                            <div class="card shadow-sm border-0">
+                                <div class="card-body">
+                                    <a href="{{ URL::route('news-detail', ['id' => $new->id, 'slug' => $new->slug]) }}" title="{{ $new->title }}" class='text-dark'>
+                                        <h5 class="card-title">
+                                            {{ $new->title }}
+                                        </h5>
+                                    </a>
+                                    <p class="card-text">
+                                        {{ $new->description }}
+                                    </p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="card">
-                            <div class="card-body">
-                                <a href="#" class='text-dark'>
-                                    <h5 class="card-title">
-                                        Danger card title
-                                    </h5>
-                                </a>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="card">
-                            <div class="card-body">
-                                <a href="#" class='text-dark'>
-                                    <h5 class="card-title">
-                                        Danger card title
-                                    </h5>
-                                </a>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="card">
-                            <div class="card-body">
-                                <a href="#" class='text-dark'>
-                                    <h5 class="card-title">
-                                        Danger card title
-                                    </h5>
-                                </a>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="card">
-                            <div class="card-body">
-                                <a href="#" class='text-dark'>
-                                    <h5 class="card-title">
-                                        Danger card title
-                                    </h5>
-                                </a>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="card">
-                            <div class="card-body">
-                                <a href="#" class='text-dark'>
-                                    <h5 class="card-title">
-                                        Danger card title
-                                    </h5>
-                                </a>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="card">
-                            <div class="card-body">
-                                <a href="#" class='text-dark'>
-                                    <h5 class="card-title">
-                                        Danger card title
-                                    </h5>
-                                </a>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="card">
-                            <div class="card-body">
-                                <a href="#" class='text-dark'>
-                                    <h5 class="card-title">
-                                        Danger card title
-                                    </h5>
-                                </a>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="card">
-                            <div class="card-body">
-                                <a href="#" class='text-dark'>
-                                    <h5 class="card-title">
-                                        Danger card title
-                                    </h5>
-                                </a>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="card">
-                            <div class="card-body">
-                                <a href="#" class='text-dark'>
-                                    <h5 class="card-title">
-                                        Danger card title
-                                    </h5>
-                                </a>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            </div>
-                        </div>
-                    </div>
+                    @endforeach
                 </div>
             </div>
         </div>

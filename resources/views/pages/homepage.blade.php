@@ -34,7 +34,7 @@ Trang chủ
                   <div class="col-lg-6 text-center text-lg-start">
                       <h1 class="text-white mb-4 animated zoomIn">Cung cấp giải pháp chuyển đổi số tốt nhất !</h1>
                       <p class="text-white pb-3 animated zoomIn">Chuyển đổi ý tưởng thành hiện thực trên nền tảng số, hãy để chúng tôi giúp bạn.</p>
-                      <a href="" class="btn btn-light py-sm-3 px-sm-5 rounded-pill me-3 animated slideInLeft mt-5">Liên Hệ Ngay</a>
+                      <a href="#our-contact" class="btn btn-light py-sm-3 px-sm-5 rounded-pill me-3 animated slideInLeft mt-5">Liên Hệ Ngay</a>
                   </div>
                   <div class="col-lg-6 offset-lg-0 col-8 offset-2 text-center text-lg-start">
                       <img class="img-fluid" src="img/thiet-ke-web.webp" alt="thiet ke web">
@@ -57,7 +57,7 @@ Trang chủ
                       <h6 class="position-relative text-main-blue ps-4">Về chúng tôi</h6>
                       <h2 class="mt-2">Chúng tôi là nhà cung cấp hàng đầu các giải pháp chuyển đổi kỹ thuật số.</h2>
                   </div>
-                  <p class="mb-4">Với kinh nghiệm và chuyên môn của đội ngũ chuyên gia, chúng tôi cam kết cung cấp các giải pháp tốt nhất cho khách hàng, từ phân tích, đánh giá nhu cầu đến thiết kế và triển khai hệ thống. Chúng tôi tin rằng chuyển đổi kỹ thuật số có thể giúp các công ty tiết kiệm thời gian và tiền bạc, tăng hiệu quả và cải thiện khả năng cạnh tranh trên thị trường.</p>
+                  <p class="mb-4 company-about-content">Với kinh nghiệm và chuyên môn của đội ngũ chuyên gia, chúng tôi cam kết cung cấp các giải pháp tốt nhất cho khách hàng, từ phân tích, đánh giá nhu cầu đến thiết kế và triển khai hệ thống. Chúng tôi tin rằng chuyển đổi kỹ thuật số có thể giúp các công ty tiết kiệm thời gian và tiền bạc, tăng hiệu quả và cải thiện khả năng cạnh tranh trên thị trường.</p>
                   <div class="row g-3">
                       <div class="col-sm-6">
                           <h6 class="mb-3"><i class="fa fa-check text-main-blue me-2"></i>Lấy khách hàng là trung tâm</h6>
@@ -90,8 +90,11 @@ Trang chủ
                   <h3 class="text-white">Gửi những tin tức mới nhất đến email</h3>
                   <small class="text-white">Những thông tin mới sẽ giúp nắm bắt được những cơ hội!</small>
                   <div class="position-relative w-100 mt-3">
-                      <input class="form-control border-0 rounded-pill w-100 ps-4 pe-5" type="text" placeholder="Địa chỉ email của bạn" style="height: 48px;">
-                      <button type="button" class="btn shadow-none position-absolute top-0 end-0 mt-1 me-2"><i class="fa fa-paper-plane text-main-blue fs-4"></i></button>
+                      <form method="POST" action="{{ URL::route('save-mail') }}">
+                        {{ csrf_field() }}
+                        <input name="email" class="form-control border-0 rounded-pill w-100 ps-4 pe-5" type="text" placeholder="Địa chỉ email của bạn" style="height: 48px;">
+                        <button type="submit" class="btn shadow-none position-absolute top-0 end-0 mt-1 me-2"><i class="fa fa-paper-plane text-main-blue fs-4"></i></button>
+                      </form>
                   </div>
               </div>
               <div class="col-md-6 text-center mb-n5 d-none d-md-block">

@@ -133,7 +133,10 @@ h6,
   left: 3px;
 }
 
-
+/***  About ***/
+.company-about-content {
+  line-height: 1.6rem;
+}
 /*** Service ***/
 .service-item {
   position: relative;
