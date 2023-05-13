@@ -5,14 +5,17 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Session;
 use App\Repositories\ProjectRepository;
+use App\Repositories\EmailRepository;
+
 use Mail;
 
 class PageController extends Controller
 {
-    public function __construct(Request $request, ProjectRepository $projectRepository)
+    public function __construct(Request $request, ProjectRepository $projectRepository, EmailRepository $emailRepository)
     {
         $this->request = $request;
         $this->projectRepository = $projectRepository;
+        $this->emailRepository = $emailRepository;
     }
 
     public function homepage() 
@@ -20,6 +23,7 @@ class PageController extends Controller
         $projects = $this->projectRepository->allProjects();
         
         return view('pages.homepage', [
+            'mail_message' => null,
             'projects' => $projects,
         ]);
     }
@@ -46,11 +50,7 @@ class PageController extends Controller
 
     public function saveMail(Request $request)
     {
-        // $input = $request->all();
-        // Mail::send('pages.mail', array('email'=>$input["email"]), function($message){
-	    //     $message->to('vhtn1993@gmail.com', 'Visitor')->subject('Visitor Feedback!');
-	    // });
-        // echo "Successfully sent the email";
-        // Session::flash('flash_message', 'Send message successfully!');
+        $mail_message = $this->emailRepository->saveMailToDatabase($request->email);
+        return redirect()->back()->with('mail_message', $mail_message);
     }
 }

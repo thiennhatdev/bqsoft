@@ -375,3 +375,25 @@ h6,
   color: #000;
 }
 /* style for contact */
+
+/* style for toast mail */
+.mail-toast{
+  position: fixed; 
+  top: 1rem; 
+  right: 1rem; 
+  z-index: 1000; 
+  background: #fff;
+  border-radius: 4px;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.mail-toast p {
+  color: var(--secondary);
+}
+.close-toast-mail {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+/* style for toast mail */

@@ -38,6 +38,7 @@ function removeWhitespace($buffer)
     <link href="{{ asset('/css/global.css') }}" rel="stylesheet" />
     <link href="{{ asset('/css/common.css') }}" rel="stylesheet" />
     <link href="{{ asset('/css/responsive.css') }}" rel="stylesheet" />
+    
     @yield('head')
 </head>
 

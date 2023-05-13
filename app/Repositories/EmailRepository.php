@@ -16,4 +16,13 @@ class EmailRepository extends ModuleRepository
     {
         $this->model = $model;
     }
+
+    public function saveMailToDatabase($email)
+    {
+        $this->model->create([
+            'customer_email' => $email,
+            'published' => 1
+        ]);
+        return "Tạo email thành công!";
+    }
 }

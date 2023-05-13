@@ -26,11 +26,11 @@ class About extends Model implements Sortable
         'fanpage',
         'position',
     ];
-    
+
     public $slugAttributes = [
         'title',
     ];
-    
+
     // public $mediasParams = [
     //     'cover' => [
     //         'default' => [

@@ -452,6 +452,13 @@ Trang chủ
   <a href="#" class="btn btn-lg btn-main-blue btn-lg-square back-to-top pt-2"><i class="bi bi-arrow-up"></i></a>
 </div>
 
+@if(session('mail_message'))
+  <div class='mail-toast'>
+    <p>{{ session('mail_message') }}</p>
+    <i class="bi bi-x close-toast-mail"></i>
+  </div>
+@endif()
+
 @endsection
 
 @section('script')

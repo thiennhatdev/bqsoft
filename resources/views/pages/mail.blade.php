@@ -1,1 +1,2 @@
-content email in blade file
+{{ $title }}
+{!! $content->renderBlocks() !!}

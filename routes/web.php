@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::name('homepage')->get('/', 'App\Http\Controllers\PageController@homepage');
-Route::name('save-mail')->post('/', 'App\Http\Controllers\PageController@saveMail');
+Route::name('save-mail')->post('/luu-email', 'App\Http\Controllers\PageController@saveMail');
 Route::name('news')->get('/tin-tuc.html', 'App\Http\Controllers\NewsController@list');
 Route::name('news-detail')->get('/tin-tuc/tin{id}-{slug}.html', 'App\Http\Controllers\NewsController@detail');
 Route::name('about')->get('/thong-tin.html', 'App\Http\Controllers\AboutController@index');

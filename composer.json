@@ -6,7 +6,7 @@
     "license": "MIT",
     "require": {
         "php": "^8.0",
-        "area17/twill": "^2.0",
+        "area17/twill": "^3.0",
         "caseyamcl/toc": "^3.1",
         "fruitcake/laravel-cors": "^2.0",
         "guzzlehttp/guzzle": "^7.0.1",
@@ -20,7 +20,8 @@
         "laravel/sail": "^1.0.1",
         "mockery/mockery": "^1.4.4",
         "nunomaduro/collision": "^5.10",
-        "phpunit/phpunit": "^9.5.10"
+        "phpunit/phpunit": "^9.5.10",
+        "rector/rector": "^0.14"
     },
     "autoload": {
         "psr-4": {
