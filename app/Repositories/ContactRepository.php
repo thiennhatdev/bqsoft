@@ -17,4 +17,16 @@ class ContactRepository extends ModuleRepository
     {
         $this->model = $model;
     }
+
+    public function contactFromClient($request)
+    {
+        $this->model->create([
+            'username' => $request->username,
+            'email' => $request->email,
+            'price' => $request->price,
+            'title' => $request->title,
+            'description' => $request->description,
+        ]);
+        return "Gửi liên hệ thành công!";
+    }
 }

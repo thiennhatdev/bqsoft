@@ -23,6 +23,6 @@ class EmailRepository extends ModuleRepository
             'customer_email' => $email,
             'published' => 1
         ]);
-        return "Tạo email thành công!";
+        return "Đăng ký nhận bài viết thành công!";
     }
 }

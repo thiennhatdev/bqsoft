@@ -18,4 +18,19 @@ class ServiceRepository extends ModuleRepository
     {
         $this->model = $model;
     }
+
+    public function allServices() 
+    {
+        $isExist = $this->model->exists();
+        if($isExist)
+        {
+            return $this->model
+            ->published()
+            ->get();
+        }
+        else
+        {
+            return [];
+        }
+    }
 }

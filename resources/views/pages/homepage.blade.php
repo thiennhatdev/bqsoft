@@ -113,66 +113,18 @@ Trang chủ
               <h2 class="mt-2">Chúng tôi cung cấp</h2>
           </div>
           <div class="row g-4">
-              <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.1s">
-                  <div class="service-item d-flex flex-column justify-content-center text-center rounded">
-                      <div class="service-icon flex-shrink-0">
-                          <img alt='icon seo' src="{{ asset('img/icon-seo.png') }}" />
-                      </div>
-                      <h5 class="mb-3">Giải pháp SEO tổng thể</h5>
-                      <p>Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
-                      <a class="btn px-3 mt-auto mx-auto" href="">Read More</a>
-                  </div>
-              </div>
-              <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.3s">
-                  <div class="service-item d-flex flex-column justify-content-center text-center rounded">
-                      <div class="service-icon flex-shrink-0">
-                        <img alt='icon website' src="{{ asset('img/icon-website.webp') }}" />
-                      </div>
-                      <h5 class="mb-3">Thiết kế website</h5>
-                      <p>Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
-                      <a class="btn px-3 mt-auto mx-auto" href="">Read More</a>
-                  </div>
-              </div>
-              <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.6s">
-                  <div class="service-item d-flex flex-column justify-content-center text-center rounded">
-                      <div class="service-icon flex-shrink-0">
-                        <img alt='icon app mobile' src="{{ asset('img/icon-app.svg') }}" />
-                      </div>
-                      <h5 class="mb-3">Thiết kế App Mobile</h5>
-                      <p>Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
-                      <a class="btn px-3 mt-auto mx-auto" href="">Read More</a>
-                  </div>
-              </div>
-              <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.1s">
-                  <div class="service-item d-flex flex-column justify-content-center text-center rounded">
-                      <div class="service-icon flex-shrink-0">
-                        <img alt='icon logo & banner' src="{{ asset('img/icon-design.webp') }}" />
-                      </div>
-                      <h5 class="mb-3">Thiết kế logo và banner</h5>
-                      <p>Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
-                      <a class="btn px-3 mt-auto mx-auto" href="">Read More</a>
-                  </div>
-              </div>
-              <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.3s">
-                  <div class="service-item d-flex flex-column justify-content-center text-center rounded">
-                      <div class="service-icon flex-shrink-0">
-                        <img alt='icon desktop' src="{{ asset('img/icon-desktop.png') }}" />
-                      </div>
-                      <h5 class="mb-3">Xây dựng ứng dụng desktop</h5>
-                      <p>Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
-                      <a class="btn px-3 mt-auto mx-auto" href="">Read More</a>
-                  </div>
-              </div>
-              <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.6s">
-                  <div class="service-item d-flex flex-column justify-content-center text-center rounded">
-                      <div class="service-icon flex-shrink-0">
-                        <img alt='icon tool' src="{{ asset('img/icon-tool.webp') }}" />
-                      </div>
-                      <h5 class="mb-3">Tool hỗ trợ</h5>
-                      <p>Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
-                      <a class="btn px-3 mt-auto mx-auto" href="">Read More</a>
-                  </div>
-              </div>
+            @foreach($services as $service)
+                <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.1s">
+                    <div class="service-item d-flex flex-column justify-content-center text-center rounded">
+                        <div class="service-icon flex-shrink-0">
+                            <img alt='icon seo' src="{{ $service->image('services_icon', 'default') }}" />
+                        </div>
+                        <h5 class="mb-3">{{ $service->title }}</h5>
+                        <p>{{ $service->description }}</p>
+                        <a class="btn px-3 mt-auto mx-auto" href="">Read More</a>
+                    </div>
+                </div>
+            @endforeach
           </div>
       </div>
   </div>
@@ -196,78 +148,22 @@ Trang chủ
               </div>
           </div>
           <div class="row g-4 portfolio-container">
-              <div class="col-lg-4 col-md-6 portfolio-item first wow zoomIn" data-wow-delay="0.1s">
-                  <div class="position-relative rounded overflow-hidden">
-                      <img class="img-fluid w-100" src="img/portfolio-1.jpg" alt="">
-                      <div class="portfolio-overlay">
-                          <a class="btn btn-light" href="img/portfolio-1.jpg" data-lightbox="portfolio"><i class="fa fa-plus fa-2x text-main-blue"></i></a>
-                          <div class="mt-auto">
-                              <small class="text-white"><i class="fa fa-folder me-2"></i>Web Design</small>
-                              <a class="h5 d-block text-white mt-1 mb-0" href="">Project Name</a>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-              <div class="col-lg-4 col-md-6 portfolio-item second wow zoomIn" data-wow-delay="0.3s">
-                  <div class="position-relative rounded overflow-hidden">
-                      <img class="img-fluid w-100" src="img/portfolio-2.jpg" alt="">
-                      <div class="portfolio-overlay">
-                          <a class="btn btn-light" href="img/portfolio-2.jpg" data-lightbox="portfolio"><i class="fa fa-plus fa-2x text-main-blue"></i></a>
-                          <div class="mt-auto">
-                              <small class="text-white"><i class="fa fa-folder me-2"></i>Web Design</small>
-                              <a class="h5 d-block text-white mt-1 mb-0" href="">Project Name</a>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-              <div class="col-lg-4 col-md-6 portfolio-item first wow zoomIn" data-wow-delay="0.6s">
-                  <div class="position-relative rounded overflow-hidden">
-                      <img class="img-fluid w-100" src="img/portfolio-3.jpg" alt="">
-                      <div class="portfolio-overlay">
-                          <a class="btn btn-light" href="img/portfolio-3.jpg" data-lightbox="portfolio"><i class="fa fa-plus fa-2x text-main-blue"></i></a>
-                          <div class="mt-auto">
-                              <small class="text-white"><i class="fa fa-folder me-2"></i>Web Design</small>
-                              <a class="h5 d-block text-white mt-1 mb-0" href="">Project Name</a>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-              <div class="col-lg-4 col-md-6 portfolio-item second wow zoomIn" data-wow-delay="0.1s">
-                  <div class="position-relative rounded overflow-hidden">
-                      <img class="img-fluid w-100" src="img/portfolio-4.jpg" alt="">
-                      <div class="portfolio-overlay">
-                          <a class="btn btn-light" href="img/portfolio-4.jpg" data-lightbox="portfolio"><i class="fa fa-plus fa-2x text-main-blue"></i></a>
-                          <div class="mt-auto">
-                              <small class="text-white"><i class="fa fa-folder me-2"></i>Web Design</small>
-                              <a class="h5 d-block text-white mt-1 mb-0" href="">Project Name</a>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-              <div class="col-lg-4 col-md-6 portfolio-item first wow zoomIn" data-wow-delay="0.3s">
-                  <div class="position-relative rounded overflow-hidden">
-                      <img class="img-fluid w-100" src="img/portfolio-5.jpg" alt="">
-                      <div class="portfolio-overlay">
-                          <a class="btn btn-light" href="img/portfolio-5.jpg" data-lightbox="portfolio"><i class="fa fa-plus fa-2x text-main-blue"></i></a>
-                          <div class="mt-auto">
-                              <small class="text-white"><i class="fa fa-folder me-2"></i>Web Design</small>
-                              <a class="h5 d-block text-white mt-1 mb-0" href="">Project Name</a>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-              <div class="col-lg-4 col-md-6 portfolio-item second wow zoomIn" data-wow-delay="0.6s">
-                  <div class="position-relative rounded overflow-hidden">
-                      <img class="img-fluid w-100" src="img/portfolio-6.jpg" alt="">
-                      <div class="portfolio-overlay">
-                          <a class="btn btn-light" href="img/portfolio-6.jpg" data-lightbox="portfolio"><i class="fa fa-plus fa-2x text-main-blue"></i></a>
-                          <div class="mt-auto">
-                              <small class="text-white"><i class="fa fa-folder me-2"></i>Web Design</small>
-                              <a class="h5 d-block text-white mt-1 mb-0" href="">Project Name</a>
-                          </div>
-                      </div>
-                  </div>
-              </div>
+            @foreach($projects as $project)
+                <div class="col-lg-4 col-md-6 portfolio-item first wow zoomIn" data-wow-delay="0.1s">
+                    <div class="position-relative rounded overflow-hidden">
+                        <img class="img-fluid w-100" src="{{ $project->image('thumbnail', 'default') }}" alt="">
+                        <div class="portfolio-overlay">
+                            @foreach($project->images('project_images', 'default') as $image)
+                                <a class="btn btn-light" href="{{ $image }}" data-lightbox="{{ $project->title }}"><i class="fa fa-plus fa-2x text-main-blue"></i></a>
+                            @endforeach
+                            <div class="mt-auto">
+                                <small class="text-white"><i class="fa fa-folder me-2"></i>Web Design</small>
+                                <a class="h5 d-block text-white mt-1 mb-0" href="">{{ $project->title }}</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            @endforeach
           </div>
       </div>
   </div>
@@ -279,120 +175,24 @@ Trang chủ
       <div class="container px-lg-5">
         <div class="py-5 ">
             <div class="owl-carousel testimonial-carousel">
-                <div class="testimonial-item bg-transparent border rounded text-white p-4">
-                    <i class="fa fa-quote-left fa-2x mb-3"></i>
-                    <p>Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam</p>
-                    <div class="d-flex align-items-center">
-                        <img class="img-fluid flex-shrink-0 rounded-circle" src="img/testimonial-1.jpg" style="width: 50px; height: 50px;">
-                        <div class="ps-3">
-                            <h6 class="text-white mb-1">Client Name</h6>
-                            <small>Profession</small>
+                @foreach($reviews as $review)
+                    <div class="testimonial-item bg-transparent border rounded text-white p-4">
+                        <i class="fa fa-quote-left fa-2x mb-3"></i>
+                        <p>{{ $review->description }}</p>
+                        <div class="d-flex align-items-center">
+                            <img class="img-fluid flex-shrink-0 rounded-circle" src="{{ $review->image('customer_avatar', 'default') }}" style="width: 50px; height: 50px; object-fit: cover;">
+                            <div class="ps-3">
+                                <h6 class="text-white mb-1">{{ $review->customer_name }}</h6>
+                                <small>{{ $review->customer_career_title }}</small>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="testimonial-item bg-transparent border rounded text-white p-4">
-                    <i class="fa fa-quote-left fa-2x mb-3"></i>
-                    <p>Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam</p>
-                    <div class="d-flex align-items-center">
-                        <img class="img-fluid flex-shrink-0 rounded-circle" src="img/testimonial-2.jpg" style="width: 50px; height: 50px;">
-                        <div class="ps-3">
-                            <h6 class="text-white mb-1">Client Name</h6>
-                            <small>Profession</small>
-                        </div>
-                    </div>
-                </div>
-                <div class="testimonial-item bg-transparent border rounded text-white p-4">
-                    <i class="fa fa-quote-left fa-2x mb-3"></i>
-                    <p>Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam</p>
-                    <div class="d-flex align-items-center">
-                        <img class="img-fluid flex-shrink-0 rounded-circle" src="img/testimonial-3.jpg" style="width: 50px; height: 50px;">
-                        <div class="ps-3">
-                            <h6 class="text-white mb-1">Client Name</h6>
-                            <small>Profession</small>
-                        </div>
-                    </div>
-                </div>
-                <div class="testimonial-item bg-transparent border rounded text-white p-4">
-                    <i class="fa fa-quote-left fa-2x mb-3"></i>
-                    <p>Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam</p>
-                    <div class="d-flex align-items-center">
-                        <img class="img-fluid flex-shrink-0 rounded-circle" src="img/testimonial-4.jpg" style="width: 50px; height: 50px;">
-                        <div class="ps-3">
-                            <h6 class="text-white mb-1">Client Name</h6>
-                            <small>Profession</small>
-                        </div>
-                    </div>
-                </div>
+                @endforeach
             </div>
         </div>
       </div>
   </div>
   <!-- Testimonial End -->
-
-
-  <!-- Team Start -->
-  <!-- <div class="container-xxl py-5">
-      <div class="container px-lg-5">
-          <div class="section-title position-relative text-center mb-5 pb-2 wow fadeInUp" data-wow-delay="0.1s">
-              <h6 class="position-relative d-inline text-main-blue ps-4">Our Team</h6>
-              <h2 class="mt-2">Meet Our Team Members</h2>
-          </div>
-          <div class="row g-4">
-              <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                  <div class="team-item">
-                      <div class="d-flex">
-                          <div class="flex-shrink-0 d-flex flex-column align-items-center mt-4 pt-5" style="width: 75px;">
-                              <a class="btn btn-square text-main-blue bg-white my-1" href=""><i class="fab fa-facebook-f"></i></a>
-                              <a class="btn btn-square text-main-blue bg-white my-1" href=""><i class="fab fa-twitter"></i></a>
-                              <a class="btn btn-square text-main-blue bg-white my-1" href=""><i class="fab fa-instagram"></i></a>
-                              <a class="btn btn-square text-main-blue bg-white my-1" href=""><i class="fab fa-linkedin-in"></i></a>
-                          </div>
-                          <img class="img-fluid rounded w-100" src="img/team-1.jpg" alt="">
-                      </div>
-                      <div class="px-4 py-3">
-                          <h5 class="fw-bold m-0">Jhon Doe</h5>
-                          <small>CEO</small>
-                      </div>
-                  </div>
-              </div>
-              <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                  <div class="team-item">
-                      <div class="d-flex">
-                          <div class="flex-shrink-0 d-flex flex-column align-items-center mt-4 pt-5" style="width: 75px;">
-                              <a class="btn btn-square text-main-blue bg-white my-1" href=""><i class="fab fa-facebook-f"></i></a>
-                              <a class="btn btn-square text-main-blue bg-white my-1" href=""><i class="fab fa-twitter"></i></a>
-                              <a class="btn btn-square text-main-blue bg-white my-1" href=""><i class="fab fa-instagram"></i></a>
-                              <a class="btn btn-square text-main-blue bg-white my-1" href=""><i class="fab fa-linkedin-in"></i></a>
-                          </div>
-                          <img class="img-fluid rounded w-100" src="img/team-2.jpg" alt="">
-                      </div>
-                      <div class="px-4 py-3">
-                          <h5 class="fw-bold m-0">Emma William</h5>
-                          <small>Manager</small>
-                      </div>
-                  </div>
-              </div>
-              <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
-                  <div class="team-item">
-                      <div class="d-flex">
-                          <div class="flex-shrink-0 d-flex flex-column align-items-center mt-4 pt-5" style="width: 75px;">
-                              <a class="btn btn-square text-main-blue bg-white my-1" href=""><i class="fab fa-facebook-f"></i></a>
-                              <a class="btn btn-square text-main-blue bg-white my-1" href=""><i class="fab fa-twitter"></i></a>
-                              <a class="btn btn-square text-main-blue bg-white my-1" href=""><i class="fab fa-instagram"></i></a>
-                              <a class="btn btn-square text-main-blue bg-white my-1" href=""><i class="fab fa-linkedin-in"></i></a>
-                          </div>
-                          <img class="img-fluid rounded w-100" src="img/team-3.jpg" alt="">
-                      </div>
-                      <div class="px-4 py-3">
-                          <h5 class="fw-bold m-0">Noah Michael</h5>
-                          <small>Designer</small>
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </div>
-  </div> -->
-  <!-- Team End -->
 
   <!-- Contact Start -->
   <div class="container-xxl py-5" id="our-contact">
@@ -404,35 +204,48 @@ Trang chủ
                     <h2 class="mt-2">Chúng tôi sẽ liên hệ lại chậm nhất trong vòng 24h</h2>
                 </div>
                 <div class="wow fadeInUp" data-wow-delay="0.3s">
-                    <form>
+                    <form class="requires-validation" novalidate method="POST" action="{{ URL::route('send-contact') }}">
+                        {{ csrf_field() }}
                         <div class="row g-3">
                             <div class="col-md-6">
                                 <div class="form-floating">
-                                    <input type="text" class="form-control" id="name" placeholder="Tên của bạn">
+                                    <input type="text" class="form-control" id="name" placeholder="Tên của bạn" name="username" required>
+                                    <div class="invalid-feedback">
+                                        Vui lòng nhập tên!
+                                    </div>
                                     <label for="name">Tên của bạn</label>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-floating">
-                                    <input type="email" class="form-control" id="email" placeholder="Email của bạn">
+                                    <input type="email" class="form-control" id="email" placeholder="Email của bạn" name="email" required>
+                                    <div class="invalid-feedback">
+                                        Vui lòng nhập email!
+                                    </div>
                                     <label for="email">Email của bạn</label>
                                 </div>
                             </div>
                             <div class="col-12">
                                 <div class="form-floating">
-                                    <input type="select" class="form-control" id="subject" placeholder="Ngân sách">
+                                    <input type="select" class="form-control" id="subject" placeholder="Ngân sách" name="price" required>
+                                    <div class="invalid-feedback">
+                                        Vui lòng nhập ngân sách!
+                                    </div>
                                     <label for="subject">Ngân sách</label>
                                 </div>
                             </div>
                             <div class="col-12">
                                 <div class="form-floating">
-                                    <input type="text" class="form-control" id="subject" placeholder="Tiêu đề">
+                                    <input type="text" class="form-control" id="subject" placeholder="Tiêu đề" name="title" required>
+                                    <div class="invalid-feedback">
+                                        Vui lòng nhập tiêu đề!
+                                    </div>
                                     <label for="subject">Tiêu đề</label>
                                 </div>
                             </div>
                             <div class="col-12">
                                 <div class="form-floating">
-                                    <textarea class="form-control" placeholder="Nhập yêu cầu" id="message" style="height: 150px"></textarea>
+                                    <textarea class="form-control" placeholder="Nhập yêu cầu" id="message" style="height: 150px" name="description"></textarea>
                                     <label for="message">Yêu cầu của bạn</label>
                                 </div>
                             </div>
@@ -452,12 +265,16 @@ Trang chủ
   <a href="#" class="btn btn-lg btn-main-blue btn-lg-square back-to-top pt-2"><i class="bi bi-arrow-up"></i></a>
 </div>
 
-@if(session('mail_message'))
+@if(session('mail_message') || session('contact_message'))
   <div class='mail-toast'>
-    <p>{{ session('mail_message') }}</p>
+    @if(session('mail_message'))
+        <p>{{ session('mail_message') }}</p>
+    @else
+        <p>{{ session('contact_message') }}</p>
+    @endif
     <i class="bi bi-x close-toast-mail"></i>
   </div>
-@endif()
+@endif
 
 @endsection
 

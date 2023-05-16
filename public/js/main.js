@@ -110,7 +110,25 @@
 // close toast mail
 let btnClose = document.querySelector('.close-toast-mail');
 let mailToast = document.querySelector('.mail-toast');
-btnClose.addEventListener('click', () => {
-    mailToast.classList.add('d-none');
-})
+if (btnClose) {
+    btnClose.addEventListener('click', () => {
+        mailToast.classList.add('d-none');
+    })
+}
 // close toast mail
+
+(function () {
+    'use strict'
+    const forms = document.querySelectorAll('.requires-validation')
+    Array.from(forms)
+      .forEach(function (form) {
+        form.addEventListener('submit', function (event) {
+        if (!form.checkValidity()) {
+            event.preventDefault()
+            event.stopPropagation()
+        }
+      
+          form.classList.add('was-validated')
+        }, false)
+      })
+})()

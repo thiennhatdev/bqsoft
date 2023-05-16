@@ -6,6 +6,13 @@
         'label' => 'Ảnh dự án',
     ])
 
+    @formField('medias', [
+        'name' => 'project_images',
+        'label' => 'Ảnh dự án',
+        'max' => 10,
+        'fieldNote' => 'Minimum image width: 1500px'
+    ])
+
     @formField('input', [
         'name' => 'title',
         'label' => 'Dự án',
