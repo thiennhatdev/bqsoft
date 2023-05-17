@@ -107,3 +107,10 @@
     
 })(jQuery);
 
+// close toast mail
+let btnClose = document.querySelector('.close-toast-mail');
+let mailToast = document.querySelector('.mail-toast');
+btnClose.addEventListener('click', () => {
+    mailToast.classList.add('d-none');
+})
+// close toast mail

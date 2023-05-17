@@ -8,3 +8,9 @@
   background-repeat: no-repeat;
 }
 
+.content-of-table>ul {
+  width: max-content;
+  padding: 1rem 2rem;
+  background: #e9ecef;
+  border-radius: 4px;
+}

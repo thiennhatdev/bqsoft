@@ -1,8 +1,7 @@
 <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
   <div class="container-xxl px-lg-5 position-relative">
-    <a href="" class="navbar-brand p-0">
-        <h1 class="m-0"><i class="fa fa-search me-2"></i>SEO<span class="fs-5">Master</span></h1>
-        <!-- <img src="img/logo.png" alt="Logo"> -->
+    <a href="{{ URL::route('homepage') }}" class="navbar-brand p-0">
+        <img src="{{ asset('img/logo.svg') }}" alt="logo-bqsoft">
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
         <span class="fa fa-bars"></span>

@@ -20,6 +20,8 @@ class News extends Model implements Sortable
         'published',
         'title',
         'description',
+        'isSentMail',
+        'isHaveSendMail',
         'position',
     ];
     
