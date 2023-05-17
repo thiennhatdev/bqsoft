@@ -46,8 +46,8 @@ Danh sách tin
                                             {{ $new->title }}
                                         </h5>
                                     </a>
-                                    <p class="card-text">
-                                        {{ $new->description }}
+                                    <p class="card-text truncate-two-line">
+                                        {{ substr(strip_tags($new->renderBlocks()), 0, 200) }}
                                     </p>
                                 </div>
                             </div>
@@ -58,6 +58,8 @@ Danh sách tin
         </div>
     </div>
   </div>
+  @include('components.pagination.default', ['paginator' => $news, 'link_limit' => 10])
+
 <!-- News End -->
       
 @endsection

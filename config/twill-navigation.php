@@ -1,32 +1,36 @@
-<?php
+<?php 
 
 return [
     'services' => [
         'title' => 'Dịch vụ',
-        'module' => true
+        'module' => true,
     ],
     'projects' => [
         'title' => 'Dự án',
-        'module' => true
+        'module' => true,
     ],
     'news' => [
         'title' => 'Tin tức',
-        'module' => true
+        'module' => true,
     ],
     'contacts' => [
         'title' => 'Liên hệ',
-        'module' => true
+        'module' => true,
     ],
     'emails' => [
         'title' => 'Email',
-        'module' => true
+        'module' => true,
     ],
     'reviews' => [
         'title' => 'Đánh giá',
-        'module' => true
+        'module' => true,
     ],
     'abouts' => [
         'title' => 'Về công ty',
-        'module' => true
-    ]
+        'module' => true,
+    ],
+    'teamMembers' => [
+        'title' => 'Thành viên',
+        'module' => true,
+    ],
 ];

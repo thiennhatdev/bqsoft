@@ -18,4 +18,19 @@ class ReviewRepository extends ModuleRepository
     {
         $this->model = $model;
     }
+
+    public function allReviews() 
+    {
+        $isExist = $this->model->exists();
+        if($isExist)
+        {
+            return $this->model
+            ->published()
+            ->get();
+        }
+        else
+        {
+            return [];
+        }
+    }
 }
