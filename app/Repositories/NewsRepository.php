@@ -103,8 +103,18 @@ class NewsRepository extends ModuleRepository
             ), function($message) use ($newsDetail, $item){
                 $message->to($item->customer_email, 'Visitor')->subject($newsDetail->title);
             });
-        }    
-        
+        }  
+    }
+
+    public function searchNews($slug)
+    {
+        $query = str_replace('-', ' ', $slug);
+        $results = News::where('news.title', 'LIKE', '%' . $query . '%')
+                    ->where('news.deleted_at', '=', null)
+                    ->published()
+                    ->paginate(10)
+                    ;
+        return $results;
     }
    
 }

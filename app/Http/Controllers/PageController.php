@@ -9,6 +9,7 @@ use App\Repositories\EmailRepository;
 use App\Repositories\ServiceRepository;
 use App\Repositories\ReviewRepository;
 use App\Repositories\ContactRepository;
+use App\Repositories\NewsRepository;
 
 use Mail;
 
@@ -20,7 +21,8 @@ class PageController extends Controller
         EmailRepository $emailRepository,
         ServiceRepository $serviceRepository,
         ReviewRepository $reviewRepository,
-        ContactRepository $contactRepository
+        ContactRepository $contactRepository,
+        NewsRepository $newsRepository
     )
     {
         $this->request = $request;
@@ -29,6 +31,7 @@ class PageController extends Controller
         $this->serviceRepository = $serviceRepository;
         $this->reviewRepository = $reviewRepository;
         $this->contactRepository = $contactRepository;
+        $this->newsRepository = $newsRepository;
     }
 
     public function homepage() 
@@ -46,15 +49,15 @@ class PageController extends Controller
 
     public function action_search() {
         // $this->request->session()->put('search', $this->request->input('input-search'));
-        return redirect('tim-kiem/' . str_replace(' ', '-', $this->request->input('paint-name')) . '.html');
+        return redirect('tim-kiem/' . str_replace(' ', '-', $this->request->input('input-search')) . '.html');
     }
 
     public function search()
     {
-        // $results = $this->paintRepository->searchPaints($this->request->slug);
-        // return view('pages.search', [
-        //     'results' => $results
-        // ]);
+        $results = $this->newsRepository->searchNews($this->request->slug);
+        return view('pages.search', [
+            'results' => $results
+        ]);
     }
 
     public function notfound()

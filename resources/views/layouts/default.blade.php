@@ -53,10 +53,13 @@ function removeWhitespace($buffer)
                     <button type="button" class="btn bg-white btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body d-flex align-items-center justify-content-center">
-                    <div class="input-group" style="max-width: 600px;">
-                        <input type="text" class="form-control bg-transparent border-light p-3" placeholder="Nhập từ khóa">
-                        <button class="btn btn-light px-4"><i class="bi bi-search"></i></button>
+                  <form action="{{ URL::route('action-search') }}" method="POST" class="search-form">    
+                    {{ csrf_field() }}
+                    <div class="input-group">
+                      <input name="input-search" type="text" class="form-control bg-transparent border-light p-3" placeholder="Tìm kiếm bài viết">
+                      <button class="btn btn-light px-4" type="submit"><i class="bi bi-search"></i></button>
                     </div>
+                  </form>
                 </div>
             </div>
         </div>
