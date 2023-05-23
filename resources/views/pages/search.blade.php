@@ -39,7 +39,10 @@ Tìm kiếm
                 <div class="col-12 wow fadeInUp" data-wow-delay="0.1s">
                     <div class='row g-4'>
                         @if($results->isEmpty())
-                            <h1 class='result-empty'>Không tìm thấy kết quả</h1>
+                            <h1 class='result-empty'>
+                                <i class="bi bi-search"></i>
+                                <span>Không tìm thấy kết quả</span>
+                            </h1>
                         @else
                             @foreach($results as $new)
                                 <div class="col-md-6">

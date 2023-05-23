@@ -8,6 +8,52 @@
   background-repeat: no-repeat;
 }
 
+/*** Section Title ***/
+.section-title::before {
+  position: absolute;
+  content: "";
+  width: 45px;
+  height: 4px;
+  bottom: 0;
+  left: 0;
+  background: var(--dark);
+}
+
+.section-title::after {
+  position: absolute;
+  content: "";
+  width: 4px;
+  height: 4px;
+  bottom: 0;
+  left: 50px;
+  background: var(--dark);
+}
+
+.section-title.text-center::before {
+  left: 50%;
+  margin-left: -25px;
+}
+
+.section-title.text-center::after {
+  left: 50%;
+  margin-left: 25px;
+}
+
+.section-title h6::before,
+.section-title h6::after {
+  position: absolute;
+  content: "";
+  width: 10px;
+  height: 10px;
+  top: 2px;
+  left: 0;
+  background: rgba(33, 66, 177, .5);
+}
+
+.section-title h6::after {
+  top: 5px;
+  left: 3px;
+}
 
 /*** Service ***/
 .service-item {
@@ -225,7 +271,14 @@
   display: flex;
   align-items: center;
   gap: 1rem;
+  animation: toast 0.5s;
 }
+
+@keyframes toast {
+  from {right: -100%;}
+  to {right: 1rem;}
+}
+
 .mail-toast p {
   color: var(--secondary);
 }

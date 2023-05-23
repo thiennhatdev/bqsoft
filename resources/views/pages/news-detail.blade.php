@@ -57,3 +57,7 @@
 <!-- News End -->
       
 @endsection
+
+@section('script')
+
+@endsection
