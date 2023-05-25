@@ -5,13 +5,19 @@ Trang chủ
 @endsection
 
 @section('head')
-  
-  <!-- Libraries Stylesheet -->
-  <link href="{{ asset('/lib/animate/animate.min.css') }}" rel="stylesheet">
-  <link href="{{ asset('/lib/owlcarousel/assets/owl.carousel.min.css') }}" rel="stylesheet">
-  <link href="{{ asset('/lib/lightbox/css/lightbox.min.css') }}" rel="stylesheet">
+    <!-- Meta -->
+    <meta name="description" content="Thiết kế website, Thiết kế App Mobile, Seo tổng thể, Chuyển đổi số"/>
+    <meta property="og:title" content="Bqsoft" />
+    <meta property="og:description" content="Thiết kế website, Thiết kế App Mobile, Seo tổng thể, Chuyển đổi số" />
+    <meta property="og:site_name" content="Trang chủ" />
+    <meta name="keywords" content="Thiết kế website, Thiết kế App Mobile, Seo tổng thể, Chuyển đổi số">
 
-  <link href="{{ asset('/css/homepage.css') }}" rel="stylesheet" />
+    <!-- Libraries Stylesheet -->
+    <link href="{{ asset('/lib/animate/animate.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('/lib/owlcarousel/assets/owl.carousel.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('/lib/lightbox/css/lightbox.min.css') }}" rel="stylesheet">
+
+    <link href="{{ asset('/css/homepage.css') }}" rel="stylesheet" />
 @endsection
 
 @section('content')
@@ -42,30 +48,30 @@ Trang chủ
       <div class="container px-lg-5">
           <div class="row g-5">
             <div class="col-lg-6 offset-lg-0 col-8 offset-2">
-                <img class="img-fluid wow zoomIn" data-wow-delay="0.5s" src="img/thumbnail-info-company.png">
+                <img class="img-fluid wow zoomIn" data-wow-delay="0.5s" src="img/thumbnail-info-company.png" alt='Thiết kế website & app mobile'>
             </div>
               <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
                   <div class="section-title position-relative mb-4 pb-2">
-                      <h6 class="position-relative text-main-blue ps-4">Về chúng tôi</h6>
+                      <p class="position-relative text-main-blue ps-4">Về chúng tôi</p>
                       <h2 class="mt-2">Chúng tôi là nhà cung cấp hàng đầu các giải pháp chuyển đổi kỹ thuật số.</h2>
                   </div>
                   <p class="mb-4 company-about-content">Với kinh nghiệm và chuyên môn của đội ngũ chuyên gia, chúng tôi cam kết cung cấp các giải pháp tốt nhất cho khách hàng, từ phân tích, đánh giá nhu cầu đến thiết kế và triển khai hệ thống. Chúng tôi tin rằng chuyển đổi kỹ thuật số có thể giúp các công ty tiết kiệm thời gian và tiền bạc, tăng hiệu quả và cải thiện khả năng cạnh tranh trên thị trường.</p>
                   <div class="row g-3">
                       <div class="col-sm-6">
-                          <h6 class="mb-3"><i class="fa fa-check text-main-blue me-2"></i>Lấy khách hàng là trung tâm</h6>
-                          <h6 class="mb-0"><i class="fa fa-check text-main-blue me-2"></i>Đội ngũ giàu kinh nghiệm</h6>
+                          <p class="mb-3 text-main-secondary"><i class="fa fa-check text-dark me-2"></i>Lấy khách hàng là trung tâm</p>
+                          <p class="mb-0 text-main-secondary"><i class="fa fa-check text-dark me-2"></i>Đội ngũ giàu kinh nghiệm</p>
                       </div>
                       <div class="col-sm-6">
-                          <h6 class="mb-3"><i class="fa fa-check text-main-blue me-2"></i>Hỗ trợ 24/7</h6>
-                          <h6 class="mb-0"><i class="fa fa-check text-main-blue me-2"></i>Chất lượng là ưu tiên hàng đầu</h6>
+                          <p class="mb-3 text-main-secondary"><i class="fa fa-check text-dark me-2"></i>Hỗ trợ 24/7</p>
+                          <p class="mb-0 text-main-secondary"><i class="fa fa-check text-dark me-2"></i>Chất lượng là ưu tiên hàng đầu</p>
                       </div>
                   </div>
                   <div class="d-flex align-items-center mt-4">
-                      <a class="btn btn-main-blue rounded-pill px-4 me-3" href="">Read More</a>
-                      <a class="btn btn-outline-main-blue btn-square me-3" href=""><i class="fab fa-facebook-f"></i></a>
-                      <a class="btn btn-outline-main-blue btn-square me-3" href=""><i class="fab fa-twitter"></i></a>
-                      <a class="btn btn-outline-main-blue btn-square me-3" href=""><i class="fab fa-instagram"></i></a>
-                      <a class="btn btn-outline-main-blue btn-square" href=""><i class="fab fa-linkedin-in"></i></a>
+                      <!-- <a class="btn btn-main-blue rounded-pill px-4 me-3" href="">Read More</a> -->
+                      <a class="btn btn-outline-main-blue btn-square me-3" href="#"><i class="fab fa-facebook-f"></i></a>
+                      <a class="btn btn-outline-main-blue btn-square me-3" href="#"><i class="fab fa-twitter"></i></a>
+                      <a class="btn btn-outline-main-blue btn-square me-3" href="#"><i class="fab fa-instagram"></i></a>
+                      <a class="btn btn-outline-main-blue btn-square" href="#"><i class="fab fa-linkedin-in"></i></a>
                   </div>
               </div>
           </div>
@@ -100,7 +106,7 @@ Trang chủ
   <div class="container-xxl py-5" id="our-services">
       <div class="container px-lg-5">
           <div class="section-title position-relative text-center mb-5 pb-2 wow fadeInUp" data-wow-delay="0.1s">
-              <h6 class="position-relative d-inline text-main-blue ps-4">Dịch vụ của chúng tôi</h6>
+              <p class="position-relative d-inline text-main-blue ps-4">Dịch vụ của chúng tôi</p>
               <h2 class="mt-2">Chúng tôi cung cấp</h2>
           </div>
           <div class="row g-4">
@@ -112,7 +118,7 @@ Trang chủ
                         </div>
                         <h5 class="mb-3">{{ $service->title }}</h5>
                         <p>{{ $service->description }}</p>
-                        <a class="btn px-3 mt-auto mx-auto" href="">Read More</a>
+                        <!-- <a class="btn px-3 mt-auto mx-auto" href="">Read More</a> -->
                     </div>
                 </div>
             @endforeach
@@ -126,7 +132,7 @@ Trang chủ
   <div class="container-xxl py-5" id="our-projects">
       <div class="container px-lg-5">
           <div class="section-title position-relative text-center mb-5 pb-2 wow fadeInUp" data-wow-delay="0.1s">
-              <h6 class="position-relative d-inline text-main-blue ps-4">Dự án của chúng tôi</h6>
+              <p class="position-relative d-inline text-main-blue ps-4">Dự án của chúng tôi</p>
               <h2 class="mt-2">Những dự án mới triển khai</h2>
           </div>
           <div class="row mt-n2 wow fadeInUp" data-wow-delay="0.1s">
@@ -142,7 +148,7 @@ Trang chủ
             @foreach($projects as $project)
                 <div class="col-lg-4 col-md-6 portfolio-item first wow zoomIn" data-wow-delay="0.1s">
                     <div class="position-relative rounded overflow-hidden">
-                        <img class="img-fluid w-100" src="{{ $project->image('thumbnail', 'default') }}" alt="">
+                        <img class="img-fluid w-100" src="{{ $project->image('thumbnail', 'default') }}" alt="{{ $project->description }}">
                         <div class="portfolio-overlay">
                             @foreach($project->images('project_images', 'default') as $image)
                                 <a class="btn btn-light" href="{{ $image }}" data-lightbox="{{ $project->title }}"><i class="fa fa-plus fa-2x text-main-blue"></i></a>
@@ -191,7 +197,7 @@ Trang chủ
         <div class="row justify-content-center">
             <div class="col-lg-7">
                 <div class="section-title position-relative text-center mb-5 pb-2 wow fadeInUp" data-wow-delay="0.1s">
-                    <h6 class="position-relative d-inline text-main-blue ps-4">Liên hệ</h6>
+                    <p class="position-relative d-inline text-main-blue ps-4">Liên hệ</p>
                     <h2 class="mt-2">Chúng tôi sẽ liên hệ lại chậm nhất trong vòng 24h</h2>
                 </div>
                 <div class="wow fadeInUp" data-wow-delay="0.3s">
@@ -218,7 +224,7 @@ Trang chủ
                             </div>
                             <div class="col-12">
                                 <div class="form-floating">
-                                    <input type="select" class="form-control" id="subject" placeholder="Ngân sách" name="price" required>
+                                    <input type="select" class="form-control" id="price" placeholder="Ngân sách" name="price" required>
                                     <div class="invalid-feedback">
                                         Vui lòng nhập ngân sách!
                                     </div>
@@ -227,7 +233,7 @@ Trang chủ
                             </div>
                             <div class="col-12">
                                 <div class="form-floating">
-                                    <input type="text" class="form-control" id="subject" placeholder="Tiêu đề" name="title" required>
+                                    <input type="text" class="form-control" id="title" placeholder="Tiêu đề" name="title" required>
                                     <div class="invalid-feedback">
                                         Vui lòng nhập tiêu đề!
                                     </div>
@@ -253,7 +259,7 @@ Trang chủ
   <!-- Contact End -->
 
   <!-- Back to Top -->
-  <a href="#" class="btn btn-lg btn-main-blue btn-lg-square back-to-top pt-2"><i class="bi bi-arrow-up"></i></a>
+  <a href="#" class="btn btn-lg btn-main-blue btn-lg-square back-to-top"><i class="fas fa-arrow-up"></i></i></a>
 </div>
 
 @if(session('mail_message') || session('contact_message'))
@@ -263,7 +269,7 @@ Trang chủ
     @else
         <p>{{ session('contact_message') }}</p>
     @endif
-    <i class="bi bi-x close-toast-mail"></i>
+    <i class="fas fa-times close-toast-mail"></i>
   </div>
 @endif
 

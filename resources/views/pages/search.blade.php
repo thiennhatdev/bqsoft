@@ -40,7 +40,7 @@ Tìm kiếm
                     <div class='row g-4'>
                         @if($results->isEmpty())
                             <h1 class='result-empty'>
-                                <i class="bi bi-search"></i>
+                                <i class="fa fa-search"></i>
                                 <span>Không tìm thấy kết quả</span>
                             </h1>
                         @else
