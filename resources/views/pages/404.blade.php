@@ -28,7 +28,7 @@ Không tìm thấy
     <div class="container px-lg-5 text-center">
         <div class="row justify-content-center">
             <div class="col-lg-6">
-                <i class="bi bi-exclamation-triangle display-1 text-main-blue"></i>
+                <i class="fas fa-exclamation-triangle display-1 text-main-blue"></i>
                 <h1 class="display-1">404</h1>
                 <h1 class="mb-4">TRANG KHÔNG TÌM THẤY</h1>
                 <p class="mb-4">Xin lỗi, trang bạn vừa tìm kiếm không tồn tại trên website. Trở về trang chủ hoặc sử dụng công cụ tìm kiếm.</p>

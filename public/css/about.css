@@ -39,8 +39,8 @@
   margin-left: 25px;
 }
 
-.section-title h6::before,
-.section-title h6::after {
+.section-title p::before,
+.section-title p::after {
   position: absolute;
   content: "";
   width: 10px;
@@ -50,7 +50,7 @@
   background: rgba(33, 66, 177, .5);
 }
 
-.section-title h6::after {
+.section-title p::after {
   top: 5px;
   left: 3px;
 }

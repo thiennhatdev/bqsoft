@@ -41,18 +41,18 @@ Giới thiệu công ty
                 </div>
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="section-title position-relative mb-4 pb-2">
-                        <h6 class="position-relative text-main-blue ps-4">Về chúng tôi</h6>
+                        <p class="position-relative text-main-blue ps-4">Về chúng tôi</p>
                         <h2 class="mt-2">Chúng tôi là nhà cung cấp hàng đầu các giải pháp chuyển đổi kỹ thuật số.</h2>
                     </div>
                     <p class="mb-4 company-about-content">Với kinh nghiệm và chuyên môn của đội ngũ chuyên gia, chúng tôi cam kết cung cấp các giải pháp tốt nhất cho khách hàng, từ phân tích, đánh giá nhu cầu đến thiết kế và triển khai hệ thống. Chúng tôi tin rằng chuyển đổi kỹ thuật số có thể giúp các công ty tiết kiệm thời gian và tiền bạc, tăng hiệu quả và cải thiện khả năng cạnh tranh trên thị trường.</p>
                     <div class="row g-3">
                         <div class="col-sm-6">
-                            <h6 class="mb-3"><i class="fa fa-check text-main-blue me-2"></i>Lấy khách hàng là trung tâm</h6>
-                            <h6 class="mb-0"><i class="fa fa-check text-main-blue me-2"></i>Đội ngũ giàu kinh nghiệm</h6>
+                            <p class="mb-3"><i class="fa fa-check text-main-blue me-2"></i>Lấy khách hàng là trung tâm</p>
+                            <p class="mb-0"><i class="fa fa-check text-main-blue me-2"></i>Đội ngũ giàu kinh nghiệm</p>
                         </div>
                         <div class="col-sm-6">
-                            <h6 class="mb-3"><i class="fa fa-check text-main-blue me-2"></i>Hỗ trợ 24/7</h6>
-                            <h6 class="mb-0"><i class="fa fa-check text-main-blue me-2"></i>Chất lượng là ưu tiên hàng đầu</h6>
+                            <p class="mb-3"><i class="fa fa-check text-main-blue me-2"></i>Hỗ trợ 24/7</p>
+                            <p class="mb-0"><i class="fa fa-check text-main-blue me-2"></i>Chất lượng là ưu tiên hàng đầu</p>
                         </div>
                     </div>
                     <div class="d-flex align-items-center mt-4">
@@ -95,7 +95,7 @@ Giới thiệu công ty
 <div class="container-xxl py-5">
   <div class="container px-lg-5">
       <div class="section-title position-relative text-center mb-5 pb-2 wow fadeInUp" data-wow-delay="0.1s">
-          <h6 class="position-relative d-inline text-main-blue ps-4">Đội ngũ</h6>
+          <p class="position-relative d-inline text-main-blue ps-4">Đội ngũ</p>
           <h2 class="mt-2">Tất cả thành viên công ty</h2>
       </div>
       <div class="row g-4">
@@ -126,7 +126,7 @@ Giới thiệu công ty
 @if(session('mail_message'))
   <div class='mail-toast'>
     <p>{{ session('mail_message') }}</p>
-    <i class="bi bi-x close-toast-mail"></i>
+    <i class="fas fa-times close-toast-mail"></i>
   </div>
 @endif
 
