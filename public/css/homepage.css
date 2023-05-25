@@ -1,21 +1,5 @@
 /********** Template CSS **********/
 
-
-
-/*** Spinner ***/
-#spinner {
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity .5s ease-out, visibility 0s linear .5s;
-  z-index: 99999;
-}
-
-#spinner.show {
-  transition: opacity .5s ease-out, visibility 0s linear 0s;
-  visibility: visible;
-  opacity: 1;
-}
-
 .back-to-top {
   position: fixed;
   display: none;
@@ -388,7 +372,14 @@ h6,
   display: flex;
   align-items: center;
   gap: 1rem;
+  animation: toast 0.5s;
 }
+
+@keyframes toast {
+  from {right: -100%;}
+  to {right: 1rem;}
+}
+
 .mail-toast p {
   color: var(--secondary);
 }
