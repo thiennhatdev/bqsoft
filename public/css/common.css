@@ -43,11 +43,11 @@ li {
 	z-index: 99999;
 	position: fixed;
 	left: 2rem;
-    bottom: 2rem;
+    bottom: 13rem;
     border: none;
 	background: #ec8b00;
-	width: 4rem;
-	height: 4rem;
+	width: 50px;
+	height: 50px;
 	padding: 1rem;
 	border-radius: 100%;
 	-webkit-box-sizing: border-box;
@@ -92,6 +92,13 @@ li {
 	font-size: 1.5rem;
 }
 /* style for phone call button */
+
+/* custom zalo chat */
+.zalo-chat-widget {
+	left: 2rem !important;
+    bottom: 7rem !important;
+}
+/* custom zalo chat */
 
 /* paginate */
 .pagination {
