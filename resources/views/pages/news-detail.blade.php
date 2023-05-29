@@ -1,14 +1,14 @@
 @extends('layouts.default')
 
 @section('title')
-{{-- {{ $news_detail->title }} --}}
+    {{ $news_detail->title }}
 @endsection
 
 @section('head')
-  {{-- <meta name="description" content="{!! Str::words($news_detail->description, 150)  !!}"/> --}}
-  {{-- <meta property="og:title" content="{{ $news_detail->title }}" /> --}}
-  {{-- <meta property="og:description" content="{!! Str::words($news_detail->description, 150)  !!}" /> --}}
-  {{-- <meta property="og:site_name" content="{{ $news_detail->title }}" /> --}}
+  <meta name="description" content="{!! Str::words($news_detail->description, 150)  !!}"/>
+  <meta property="og:title" content="{{ $news_detail->title }}" />
+  <meta property="og:description" content="{!! Str::words($news_detail->description, 150)  !!}" />
+  <meta property="og:site_name" content="{{ $news_detail->title }}" />
 
   <link href="{{ asset('/css/news-detail.css') }}" rel="stylesheet" />
 @endsection
@@ -55,7 +55,9 @@
     </div>
   </div>
 <!-- News End -->
-      
+<div class='bg-secondary'>
+
+</div>
 @endsection
 
 @section('script')

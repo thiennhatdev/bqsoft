@@ -93,7 +93,7 @@ function removeWhitespace($buffer)
     <script src="https://sp.zalo.me/plugins/sdk.js"></script>
 
   <!-- start chat messenger  -->
-  
+
   <!-- Messenger Plugin chat Code -->
   <div id="fb-root"></div>
 
@@ -131,16 +131,26 @@ function removeWhitespace($buffer)
     <script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v16.0" nonce="ddMh2paa"></script>
     
     <!-- JavaScript Libraries -->
-    <!-- <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script> -->
     <script src="{{ asset('/lib/jquery/jquery-3.4.1.min.js') }}"></script>
     <script src="{{ asset('/lib/wow/wow.min.js') }}"></script>
   <script src="{{ asset('/lib/owlcarousel/owl.carousel.min.js') }}"></script>
   <script src="{{ asset('/lib/isotope/isotope.pkgd.min.js') }}"></script>
     
   <script src="{{ asset('/lib/bootstrap/bootstrap.bundle.min.js') }}"></script>
-    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script> -->
-    <!-- Template Javascript -->
-    <script src="{{ asset('/js/main.js') }}"></script>
+  
+  <!-- Template Javascript -->
+  <script src="{{ asset('/js/main.js') }}"></script>
+
+  <!-- start google analytics tracking -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-14N6GJLR3E"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-14N6GJLR3E');
+  </script>
+  <!-- end google analytics tracking -->
 
     @yield('script')
 </body>
