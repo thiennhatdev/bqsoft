@@ -8,3 +8,6 @@
   background-repeat: no-repeat;
 }
 
+.news-card-title {
+  color: var(--main-blue);
+}

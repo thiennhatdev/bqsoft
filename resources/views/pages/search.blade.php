@@ -43,6 +43,10 @@ Tìm kiếm
                                 <i class="fa fa-search"></i>
                                 <span>Không tìm thấy kết quả</span>
                             </h1>
+                            <div class="mt-0">
+                                <button type="button" class="btn btn-main-blue rounded-pill py-2 px-4 d-block m-auto" data-bs-toggle="modal" data-bs-target="#searchModal">Thử lại</button>
+                            </div>
+
                         @else
                             @foreach($results as $new)
                                 <div class="col-md-6">

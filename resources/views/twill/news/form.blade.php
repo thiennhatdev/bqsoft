@@ -1,6 +1,11 @@
 @extends('layouts.admin-layout')
 
 @section('contentFields')
+    @formField('medias', [
+        'name' => 'thumbnail',
+        'label' => 'Ảnh bìa',
+    ])
+
     @formField('input', [
         'name' => 'title',
         'label' => 'Tiêu đề',

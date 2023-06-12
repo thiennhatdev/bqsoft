@@ -1,14 +1,16 @@
 @extends('layouts.default')
 
 @section('title')
-{{-- {{ $news_detail->title }} --}}
+    {{ $news_detail->title }}
 @endsection
 
 @section('head')
-  {{-- <meta name="description" content="{!! Str::words($news_detail->description, 150)  !!}"/> --}}
-  {{-- <meta property="og:title" content="{{ $news_detail->title }}" /> --}}
-  {{-- <meta property="og:description" content="{!! Str::words($news_detail->description, 150)  !!}" /> --}}
-  {{-- <meta property="og:site_name" content="{{ $news_detail->title }}" /> --}}
+    <meta name="description" content="{!! Str::words($news_detail->description, 150)  !!}"/>
+    <meta property="og:title" content="{{ $news_detail->title }}" />
+    <meta property="og:description" content="{!! Str::words($news_detail->description, 150)  !!}" />
+    <meta property="og:site_name" content="{{ $news_detail->title }}" />
+    <meta property="og:image" content="{{ $news_detail->image('thumbnail', 'default') }}">
+    <meta property="og:url" content="{{ url()->current() }}">
 
   <link href="{{ asset('/css/news-detail.css') }}" rel="stylesheet" />
 @endsection
@@ -41,13 +43,29 @@
     <div class="container px-lg-5">
         <div class="row g-5">
             <div class="col-12 wow fadeInUp" data-wow-delay="0.1s">
-                <div class='row g-4'>
+                <div class='row g-4 news-detail'>
                     <h1>{{ $news_detail->title }}</h1>
+                    <div class="mt-0">
+                        <i class="fas fa-calendar"></i>
+                        <span>Ngày đăng: </span> {{ \Carbon\Carbon::parse($news_detail->created_at)->format('d/m/Y') }}
+                    </div>
                     <div class='content-of-table'>
                         {!! $menu !!}
                     </div>
-                    <div class='news-detail-body'>
+                    <div class='news-detail-body mb-5'>
                         {!! $body !!}
+                    </div>
+                    <div class="pt-3 mt-3 border-top">
+                        <!-- Your like button code -->
+                        <div class="fb-like" 
+                            data-href="{{ url()->current() }}" 
+                            data-width=""
+                            data-layout="standard" 
+                            data-action="like" 
+                            data-size="small"  
+                            data-share="true">
+                        </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -55,7 +73,9 @@
     </div>
   </div>
 <!-- News End -->
-      
+<div class='bg-secondary'>
+
+</div>
 @endsection
 
 @section('script')

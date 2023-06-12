@@ -57,7 +57,7 @@ Danh sách dự án
                         <a class="btn btn-light" href="img/portfolio-1.jpg" data-lightbox="portfolio"><i class="fa fa-plus fa-2x text-main-blue"></i></a>
                         <div class="mt-auto">
                             <small class="text-white"><i class="fa fa-folder me-2"></i>Web Design</small>
-                            <a class="h5 d-block text-white mt-1 mb-0" href="">Project Name</a>
+                            <a class="h5 d-block text-white mt-1 mb-0" href="#">Project Name</a>
                         </div>
                     </div>
                 </div>
@@ -69,7 +69,7 @@ Danh sách dự án
                         <a class="btn btn-light" href="img/portfolio-2.jpg" data-lightbox="portfolio"><i class="fa fa-plus fa-2x text-main-blue"></i></a>
                         <div class="mt-auto">
                             <small class="text-white"><i class="fa fa-folder me-2"></i>Web Design</small>
-                            <a class="h5 d-block text-white mt-1 mb-0" href="">Project Name</a>
+                            <a class="h5 d-block text-white mt-1 mb-0" href="#">Project Name</a>
                         </div>
                     </div>
                 </div>
@@ -81,7 +81,7 @@ Danh sách dự án
                         <a class="btn btn-light" href="img/portfolio-3.jpg" data-lightbox="portfolio"><i class="fa fa-plus fa-2x text-main-blue"></i></a>
                         <div class="mt-auto">
                             <small class="text-white"><i class="fa fa-folder me-2"></i>Web Design</small>
-                            <a class="h5 d-block text-white mt-1 mb-0" href="">Project Name</a>
+                            <a class="h5 d-block text-white mt-1 mb-0" href="#">Project Name</a>
                         </div>
                     </div>
                 </div>
@@ -93,7 +93,7 @@ Danh sách dự án
                         <a class="btn btn-light" href="img/portfolio-4.jpg" data-lightbox="portfolio"><i class="fa fa-plus fa-2x text-main-blue"></i></a>
                         <div class="mt-auto">
                             <small class="text-white"><i class="fa fa-folder me-2"></i>Web Design</small>
-                            <a class="h5 d-block text-white mt-1 mb-0" href="">Project Name</a>
+                            <a class="h5 d-block text-white mt-1 mb-0" href="#">Project Name</a>
                         </div>
                     </div>
                 </div>
@@ -105,7 +105,7 @@ Danh sách dự án
                         <a class="btn btn-light" href="img/portfolio-5.jpg" data-lightbox="portfolio"><i class="fa fa-plus fa-2x text-main-blue"></i></a>
                         <div class="mt-auto">
                             <small class="text-white"><i class="fa fa-folder me-2"></i>Web Design</small>
-                            <a class="h5 d-block text-white mt-1 mb-0" href="">Project Name</a>
+                            <a class="h5 d-block text-white mt-1 mb-0" href="#">Project Name</a>
                         </div>
                     </div>
                 </div>
@@ -117,7 +117,7 @@ Danh sách dự án
                         <a class="btn btn-light" href="img/portfolio-6.jpg" data-lightbox="portfolio"><i class="fa fa-plus fa-2x text-main-blue"></i></a>
                         <div class="mt-auto">
                             <small class="text-white"><i class="fa fa-folder me-2"></i>Web Design</small>
-                            <a class="h5 d-block text-white mt-1 mb-0" href="">Project Name</a>
+                            <a class="h5 d-block text-white mt-1 mb-0" href="#">Project Name</a>
                         </div>
                     </div>
                 </div>

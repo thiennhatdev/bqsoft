@@ -14,22 +14,22 @@ function removeWhitespace($buffer)
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="robots" content="noindex">
     <title>@yield('title')</title>
-    <!-- <link rel="shortcut icon" href="{{ asset('source/img/logo.png') }}" type="image/x-icon" /> -->
+    <link rel="shortcut icon" href="{{ asset('favicon.ico') }}" type="image/x-icon" />
     
-    <!-- Google Web Fonts -->
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">  -->
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('/img/ico/apple-touch-icon.png') }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('/img/ico/favicon-32x32.png') }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('/img/ico/favicon-16x16.png') }}">
+    <link rel="manifest" href="{{ asset('/img/ico/site.webmanifest') }}">
+    <link rel="mask-icon" href="{{ asset('/img/ico/safari-pinned-tab.svg') }}" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
 
     <meta name="csrf-token" content="{{ csrf_token() }}">
     
-    <!-- Icon Font Stylesheet -->
-    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet"> -->
-
     <!-- Customized Bootstrap Stylesheet -->
     <link href="{{ asset('/css/bootstrap.min.css') }}" rel="stylesheet">
+    
     <!-- Fontawesome -->
     <link href="{{ asset('/lib/font-awesome/css/all.min.css') }}" rel="stylesheet">
 
@@ -72,43 +72,34 @@ function removeWhitespace($buffer)
     
 
     @include('components.includes.footer')
+
+    <!-- <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v16.0" nonce="ddMh2paa"></script> -->
     
-    <!-- Messenger Plugin chat Code -->
-    <!-- <div id="fb-root"></div> -->
-
-    <!-- Your Plugin chat code -->
-    <!-- <div id="fb-customer-chat" class="fb-customerchat">
-    </div> -->
-
-    <!-- phone call button -->
-    <form action="tel:917387084384">
-        <button type="submit" class='btn-phone-call'>
-          <i class="fas fa-phone-alt"></i>
-        </button>
-    </form>
-
-    <!-- chat zalo -->
-    <div class="zalo-chat-widget" data-oaid="513507143261790428" data-welcome-message="Chào bạn! Bqsoft giúp gì được không ?" data-autopopup="0" data-width="" data-height=""></div>
-
-    <script src="https://sp.zalo.me/plugins/sdk.js"></script>
-
-  <!-- start chat messenger  -->
+  <!-- JavaScript Libraries -->
+  <script src="{{ asset('/lib/jquery/jquery-3.4.1.min.js') }}"></script>
+  <script src="{{ asset('/lib/wow/wow.min.js') }}"></script>
+  <script src="{{ asset('/lib/owlcarousel/owl.carousel.min.js') }}"></script>
+  <script src="{{ asset('/lib/isotope/isotope.pkgd.min.js') }}"></script>
+    
+  <script src="{{ asset('/lib/bootstrap/bootstrap.bundle.min.js') }}"></script>
   
-  <!-- Messenger Plugin chat Code -->
-  <div id="fb-root"></div>
+  <!-- Template Javascript -->
+  <script src="{{ asset('/js/main.js') }}"></script>
 
-  <!-- Your Plugin chat code -->
-  <div id="fb-customer-chat" class="fb-customerchat">
-  </div>
-
+  <!-- start google analytics tracking -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-14N6GJLR3E"></script>
   <script>
-    var chatbox = document.getElementById('fb-customer-chat');
-    chatbox.setAttribute("page_id", "1791899111092295");
-    chatbox.setAttribute("attribution", "biz_inbox");
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-14N6GJLR3E');
   </script>
+  <!-- end google analytics tracking -->
 
   <!-- Your SDK code -->
-  <script>
+    <script>
     window.fbAsyncInit = function() {
       FB.init({
         xfbml            : true,
@@ -124,23 +115,6 @@ function removeWhitespace($buffer)
       fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));
   </script>
-
-  <!-- end chat messenger -->
-
-    <div id="fb-root"></div>
-    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v16.0" nonce="ddMh2paa"></script>
-    
-    <!-- JavaScript Libraries -->
-    <!-- <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script> -->
-    <script src="{{ asset('/lib/jquery/jquery-3.4.1.min.js') }}"></script>
-    <script src="{{ asset('/lib/wow/wow.min.js') }}"></script>
-  <script src="{{ asset('/lib/owlcarousel/owl.carousel.min.js') }}"></script>
-  <script src="{{ asset('/lib/isotope/isotope.pkgd.min.js') }}"></script>
-    
-  <script src="{{ asset('/lib/bootstrap/bootstrap.bundle.min.js') }}"></script>
-    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script> -->
-    <!-- Template Javascript -->
-    <script src="{{ asset('/js/main.js') }}"></script>
 
     @yield('script')
 </body>

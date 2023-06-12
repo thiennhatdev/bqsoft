@@ -42,12 +42,13 @@ Danh sách tin
                             <div class="card shadow-sm border-0">
                                 <div class="card-body">
                                     <a href="{{ URL::route('news-detail', ['id' => $new->id, 'slug' => $new->slug]) }}" title="{{ $new->title }}" class='text-dark'>
-                                        <h5 class="card-title">
+                                        <h5 class="card-title news-card-title">
                                             {{ $new->title }}
                                         </h5>
                                     </a>
                                     <p class="card-text truncate-two-line">
-                                        {{ substr(strip_tags($new->renderBlocks()), 0, 200) }}
+                                        {{ substr($new->description, 0, 200) }}
+                                        
                                     </p>
                                 </div>
                             </div>
@@ -58,8 +59,9 @@ Danh sách tin
         </div>
     </div>
   </div>
-  @include('components.pagination.default', ['paginator' => $news, 'link_limit' => 10])
-
+    @if($news)
+        @include('components.pagination.default', ['paginator' => $news, 'link_limit' => 10])
+    @endif
 <!-- News End -->
       
 @endsection
