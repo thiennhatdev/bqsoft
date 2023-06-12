@@ -28,11 +28,9 @@ Không tìm thấy
     <div class="container px-lg-5 text-center">
         <div class="row justify-content-center">
             <div class="col-lg-6">
-                <i class="fas fa-exclamation-triangle display-1 text-main-blue"></i>
-                <h1 class="display-1">404</h1>
-                <h1 class="mb-4">TRANG KHÔNG TÌM THẤY</h1>
-                <p class="mb-4">Xin lỗi, trang bạn vừa tìm kiếm không tồn tại trên website. Trở về trang chủ hoặc sử dụng công cụ tìm kiếm.</p>
-                <a class="btn btn-main-blue rounded-pill py-3 px-5" href="{{ URL::route('homepage') }}">Về Trang Chủ</a>
+                <h1 class="display-1 text-404">404</h1>
+                <p class="mb-4">Rất tiếc, trang bạn vừa tìm kiếm không tồn tại trên website.</p>
+                <a class="btn btn-main-blue rounded-pill py-2 px-4" href="{{ URL::route('homepage') }}">Về Trang Chủ</a>
             </div>
         </div>
     </div>

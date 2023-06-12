@@ -7,3 +7,15 @@
   background-size: contain, 40%, cover;
   background-repeat: no-repeat;
 }
+
+.text-404 {
+  font-size: 150px;
+  color: #d8868e;
+    text-shadow: 1px 1px 1px #dc3545, 2px 2px 1px #dc3545, 3px 3px 1px #dc3545, 4px 4px 1px #dc3545, 5px 5px 1px #dc3545, 6px 6px 1px #dc3545, 7px 7px 1px #dc3545, 8px 8px 1px #dc3545, 25px 25px 8px rgba(0,0,0, 0.2);
+}
+
+.text-404 + p {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: black;
+}

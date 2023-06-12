@@ -55,6 +55,11 @@
   left: 3px;
 }
 
+.company-about-content {
+  line-height: 1.6rem;
+  color: #1D1D27;
+}
+
 /*** Service ***/
 .service-item {
   position: relative;
@@ -259,6 +264,11 @@
   transition-delay: .15s;
 }
 
+.member-avatar {
+  width: calc(100% - 75px) !important;
+  object-fit: cover;
+}
+
 /* style for toast mail */
 .mail-toast{
   position: fixed; 
@@ -272,6 +282,7 @@
   align-items: center;
   gap: 1rem;
   animation: toast 0.5s;
+  box-shadow: 0 0 45px rgba(0, 0, 0, .08);
 }
 
 @keyframes toast {

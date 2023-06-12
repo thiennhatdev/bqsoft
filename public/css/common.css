@@ -43,7 +43,7 @@ li {
 	z-index: 99999;
 	position: fixed;
 	left: 2rem;
-    bottom: 13rem;
+    bottom: 179px;
     border: none;
 	background: #ec8b00;
 	width: 50px;
@@ -96,7 +96,7 @@ li {
 /* custom zalo chat */
 .zalo-chat-widget {
 	left: 2rem !important;
-    bottom: 7rem !important;
+    bottom: 100px !important;
 }
 /* custom zalo chat */
 
@@ -198,3 +198,14 @@ h6,
 	height: 2.4rem;
 }
 /* truncate two line */
+
+/* search modal */
+#searchModal {
+	z-index: 10000000000;
+}
+
+/* form control */
+.form-control:focus,
+button:focus {
+	box-shadow: none !important;
+}

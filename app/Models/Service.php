@@ -31,13 +31,13 @@ class Service extends Model implements Sortable
             'default' => [
                 [
                     'name' => 'default',
-                    'ratio' => 16 / 9,
+                    'ratio' => 0,
                 ],
             ],
             'mobile' => [
                 [
                     'name' => 'mobile',
-                    'ratio' => 1,
+                    'ratio' => 0,
                 ],
             ],
             'flexible' => [

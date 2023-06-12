@@ -7,10 +7,14 @@ Trang chủ
 @section('head')
     <!-- Meta -->
     <meta name="description" content="Thiết kế website, Thiết kế App Mobile, Seo tổng thể, Chuyển đổi số"/>
+    <meta name="author" content="Bqsoft">
     <meta property="og:title" content="Bqsoft" />
     <meta property="og:description" content="Thiết kế website, Thiết kế App Mobile, Seo tổng thể, Chuyển đổi số" />
     <meta property="og:site_name" content="Trang chủ" />
     <meta name="keywords" content="Thiết kế website, Thiết kế App Mobile, Seo tổng thể, Chuyển đổi số">
+    <meta name="description" content="Thiết kế website, Thiết kế App Mobile, Seo tổng thể, Chuyển đổi số">
+    <meta property="og:image" content="{{ asset('img/our-service-facebook-post.webp') }}">
+    <meta property="og:url" content="{{ URL::route('homepage') }}">
 
     <!-- Libraries Stylesheet -->
     <link href="{{ asset('/lib/animate/animate.min.css') }}" rel="stylesheet">
@@ -30,8 +34,8 @@ Trang chủ
           <div class="container my-lg-5 py-lg-5 px-lg-5">
               <div class="row flex-column-reverse flex-lg-row g-5 py-5">
                   <div class="col-lg-6 text-center text-lg-start">
-                      <h1 class="text-white mb-4 animated zoomIn">Cung cấp giải pháp chuyển đổi số tốt nhất !</h1>
-                      <p class="text-white pb-3 animated zoomIn">Chuyển đổi ý tưởng thành hiện thực trên nền tảng số, hãy để chúng tôi giúp bạn.</p>
+                      <h1 class="text-white mb-4 animated zoomIn slogan-text">Cung cấp giải pháp chuyển đổi số tốt nhất.</h1>
+                      <p class="text-white pb-3 animated zoomIn">Bạn muốn chuyển đổi ý tưởng thành hiện thực trên nền tảng số hay phát triển công việc kinh doanh bằng một website thương hiệu. Hãy để chúng tôi giúp bạn.</p>
                       <a href="#our-contact" class="btn btn-light py-sm-3 px-sm-5 rounded-pill me-3 animated slideInLeft mt-5">Liên Hệ Ngay</a>
                   </div>
                   <div class="col-lg-6 offset-lg-0 col-8 offset-2 text-center text-lg-start">
@@ -58,20 +62,20 @@ Trang chủ
                   <p class="mb-4 company-about-content">Với kinh nghiệm và chuyên môn của đội ngũ chuyên gia, chúng tôi cam kết cung cấp các giải pháp tốt nhất cho khách hàng, từ phân tích, đánh giá nhu cầu đến thiết kế và triển khai hệ thống. Chúng tôi tin rằng chuyển đổi kỹ thuật số có thể giúp các công ty tiết kiệm thời gian và tiền bạc, tăng hiệu quả và cải thiện khả năng cạnh tranh trên thị trường.</p>
                   <div class="row g-3">
                       <div class="col-sm-6">
-                          <p class="mb-3 text-main-secondary"><i class="fa fa-check text-dark me-2"></i>Lấy khách hàng là trung tâm</p>
-                          <p class="mb-0 text-main-secondary"><i class="fa fa-check text-dark me-2"></i>Đội ngũ giàu kinh nghiệm</p>
+                          <p class="mb-3 text-main-secondary"><i class="fa fa-check me-2"></i>Lấy khách hàng là trung tâm</p>
+                          <p class="mb-0 text-main-secondary"><i class="fa fa-check me-2"></i>Đội ngũ giàu kinh nghiệm</p>
                       </div>
                       <div class="col-sm-6">
-                          <p class="mb-3 text-main-secondary"><i class="fa fa-check text-dark me-2"></i>Hỗ trợ 24/7</p>
-                          <p class="mb-0 text-main-secondary"><i class="fa fa-check text-dark me-2"></i>Chất lượng là ưu tiên hàng đầu</p>
+                          <p class="mb-3 text-main-secondary"><i class="fa fa-check me-2"></i>Hỗ trợ 24/7</p>
+                          <p class="mb-0 text-main-secondary"><i class="fa fa-check me-2"></i>Chất lượng là ưu tiên hàng đầu</p>
                       </div>
                   </div>
                   <div class="d-flex align-items-center mt-4">
-                      <!-- <a class="btn btn-main-blue rounded-pill px-4 me-3" href="">Read More</a> -->
-                      <a class="btn btn-outline-main-blue btn-square me-3" href="#"><i class="fab fa-facebook-f"></i></a>
-                      <a class="btn btn-outline-main-blue btn-square me-3" href="#"><i class="fab fa-twitter"></i></a>
-                      <a class="btn btn-outline-main-blue btn-square me-3" href="#"><i class="fab fa-instagram"></i></a>
-                      <a class="btn btn-outline-main-blue btn-square" href="#"><i class="fab fa-linkedin-in"></i></a>
+                      <!-- <a class="btn btn-main-blue rounded-pill px-4 me-3" href="#">Read More</a> -->
+                      <a class="btn btn-outline-main-blue btn-square me-3" href="https://www.facebook.com/hoctusach" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                      <a class="btn btn-outline-main-blue btn-square me-3" href="https://twitter.com/Bqsoftvn" target="_blank"><i class="fab fa-twitter"></i></a>
+                      <a class="btn btn-outline-main-blue btn-square me-3" href="https://www.instagram.com/vonhat11/" target="_blank"><i class="fab fa-instagram"></i></a>
+                      <a class="btn btn-outline-main-blue btn-square" href="https://www.linkedin.com/in/bqsoft-vn-48ab44278/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
                   </div>
               </div>
           </div>
@@ -87,9 +91,12 @@ Trang chủ
                   <h3 class="text-white">Gửi những tin tức mới nhất đến email</h3>
                   <small class="text-white">Những thông tin mới sẽ giúp nắm bắt được những cơ hội!</small>
                   <div class="position-relative w-100 mt-3">
-                      <form method="POST" action="{{ URL::route('save-mail') }}">
+                      <form class="requires-validation" novalidate method="POST" action="{{ URL::route('save-mail') }}">
                         {{ csrf_field() }}
-                        <input name="email" class="form-control border-0 rounded-pill w-100 ps-4 pe-5" type="text" placeholder="Địa chỉ email của bạn" style="height: 48px;">
+                        <input type="email" name="email" class="form-control border-0 rounded-pill w-100 ps-4 pe-5" type="text" placeholder="Địa chỉ email của bạn" style="height: 48px;" required>
+                        <div class="invalid-feedback mt-2">
+                            Vui lòng nhập đúng định dạng email!
+                        </div>
                         <button type="submit" class="btn shadow-none position-absolute top-0 end-0 mt-1 me-2"><i class="fa fa-paper-plane text-main-blue fs-4"></i></button>
                       </form>
                   </div>
@@ -114,11 +121,11 @@ Trang chủ
                 <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.1s">
                     <div class="service-item d-flex flex-column justify-content-center text-center rounded">
                         <div class="service-icon flex-shrink-0">
-                            <img alt='icon seo' src="{{ $service->image('services_icon', 'default') }}" />
+                            <img alt='icon seo' src="{{ $service->image('services_icon', 'default', ['fm' => 'png']) }}" />
                         </div>
                         <h5 class="mb-3">{{ $service->title }}</h5>
                         <p>{{ $service->description }}</p>
-                        <!-- <a class="btn px-3 mt-auto mx-auto" href="">Read More</a> -->
+                        <!-- <a class="btn px-3 mt-auto mx-auto" href="#">Read More</a> -->
                     </div>
                 </div>
             @endforeach
@@ -155,7 +162,7 @@ Trang chủ
                             @endforeach
                             <div class="mt-auto">
                                 <small class="text-white"><i class="fa fa-folder me-2"></i>Web Design</small>
-                                <a class="h5 d-block text-white mt-1 mb-0" href="">{{ $project->title }}</a>
+                                <a class="h5 d-block text-white mt-1 mb-0" href="Thiết kế website và mobile app">{{ $project->title }}</a>
                             </div>
                         </div>
                     </div>
@@ -176,7 +183,7 @@ Trang chủ
                     <div class="testimonial-item bg-transparent border rounded text-white p-4">
                         <i class="fa fa-quote-left fa-2x mb-3"></i>
                         <p>{{ $review->description }}</p>
-                        <div class="d-flex align-items-center">
+                        <div class="d-flex align-items-center mt-1">
                             <img class="img-fluid flex-shrink-0 rounded-circle" src="{{ $review->image('customer_avatar', 'default') }}" style="width: 50px; height: 50px; object-fit: cover;">
                             <div class="ps-3">
                                 <h6 class="text-white mb-1">{{ $review->customer_name }}</h6>
@@ -262,20 +269,52 @@ Trang chủ
   <a href="#" class="btn btn-lg btn-main-blue btn-lg-square back-to-top"><i class="fas fa-arrow-up"></i></i></a>
 </div>
 
-@if(session('mail_message') || session('contact_message'))
-  <div class='mail-toast'>
-    @if(session('mail_message'))
-        <p>{{ session('mail_message') }}</p>
-    @else
-        <p>{{ session('contact_message') }}</p>
+    @if(session('mail_message') || session('contact_message'))
+    <div class='mail-toast'>
+        @if(session('mail_message'))
+            <p>{{ session('mail_message') }}</p>
+        @else
+            <p>{{ session('contact_message') }}</p>
+        @endif
+        <i class="fas fa-times close-toast-mail"></i>
+    </div>
     @endif
-    <i class="fas fa-times close-toast-mail"></i>
-  </div>
-@endif
+
+    <!-- phone call button -->
+    <a href="tel:0705550553">
+        <button type="submit" class='btn-phone-call'>
+            <i class="fas fa-phone-alt"></i>
+        </button>
+    </a>
+
+    <!-- chat zalo -->
+    <div class="zalo-chat-widget" data-oaid="513507143261790428" data-welcome-message="Chào bạn! Bqsoft giúp gì được không ?" data-autopopup="0" data-width="" data-height=""></div>
+
+    
+    <!-- start chat messenger  -->
+
+    <!-- Messenger Plugin chat Code -->
+    <div id="fb-root"></div>
+
+    <!-- Your Plugin chat code -->
+    <div id="fb-customer-chat" class="fb-customerchat">
+    </div>
+
+  
+
 
 @endsection
 
 @section('script')
+ <!-- chat zalo -->
+ <script src="https://sp.zalo.me/plugins/sdk.js"></script>
+
+<script>
+  var chatbox = document.getElementById('fb-customer-chat');
+  chatbox.setAttribute("page_id", "1791899111092295");
+  chatbox.setAttribute("attribution", "biz_inbox");
+</script>
+
   <!-- JavaScript Libraries -->
   <script src="{{ asset('/lib/easing/easing.min.js') }}"></script>
   <script src="{{ asset('/lib/waypoints/waypoints.min.js') }}"></script>

@@ -8,9 +8,19 @@
   background-repeat: no-repeat;
 }
 
+.news-detail {
+  line-height: 1.7rem;
+}
+
 .content-of-table>ul {
   width: max-content;
   padding: 1rem 2rem;
   background: #e9ecef;
+  border-radius: 4px;
+}
+
+pre {
+  background: #f5f6f7;
+  padding: 1rem;
   border-radius: 4px;
 }
