@@ -288,10 +288,11 @@ Trang chủ
     </a>
 
     <!-- chat zalo -->
-    <div class="zalo-chat-widget" data-oaid="513507143261790428" data-welcome-message="Chào bạn! Bqsoft giúp gì được không ?" data-autopopup="0" data-width="" data-height=""></div>
+    <div class='zalome'><a href='https://zalo.me/0705550553' target='_blank'>
+        <img alt='icon zalo' src="{{ asset('/img/img-zalo.png') }}"/>
+    </a></div>
 
-    
-    <!-- start chat messenger  -->
+   <!-- start chat messenger  -->
 
     <!-- Messenger Plugin chat Code -->
     <div id="fb-root"></div>
@@ -306,9 +307,6 @@ Trang chủ
 @endsection
 
 @section('script')
- <!-- chat zalo -->
- <script src="https://sp.zalo.me/plugins/sdk.js"></script>
-
 <script>
   var chatbox = document.getElementById('fb-customer-chat');
   chatbox.setAttribute("page_id", "1791899111092295");

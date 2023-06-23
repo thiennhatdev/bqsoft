@@ -93,13 +93,6 @@ li {
 }
 /* style for phone call button */
 
-/* custom zalo chat */
-.zalo-chat-widget {
-	left: 2rem !important;
-    bottom: 100px !important;
-}
-/* custom zalo chat */
-
 /* paginate */
 .pagination {
 	display: flex;

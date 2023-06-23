@@ -46,7 +46,6 @@
 }
 
 .footer .copyright {
-  padding: 25px 0;
   font-size: 14px;
   border-top: 1px solid rgba(256, 256, 256, .1);
 }
@@ -65,4 +64,8 @@
   margin-right: 0;
   padding-right: 0;
   border-right: none;
+}
+
+.footer p {
+  line-height: 1.5rem;
 }
