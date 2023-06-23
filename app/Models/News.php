@@ -50,6 +50,34 @@ class News extends Model implements Sortable
                 ],
                 [
                     'name' => 'landscape',
+                    'ratio' => 0,
+                ],
+                [
+                    'name' => 'portrait',
+                    'ratio' => 0,
+                ],
+            ],
+        ],
+        'image' => [
+            'default' => [
+                [
+                    'name' => 'default',
+                    'ratio' => 0,
+                ],
+            ],
+            'mobile' => [
+                [
+                    'name' => 'mobile',
+                    'ratio' => 0,
+                ],
+            ],
+            'flexible' => [
+                [
+                    'name' => 'free',
+                    'ratio' => 0,
+                ],
+                [
+                    'name' => 'landscape',
                     'ratio' => 16 / 9,
                 ],
                 [
@@ -57,6 +85,6 @@ class News extends Model implements Sortable
                     'ratio' => 3 / 5,
                 ],
             ],
-        ],
+        ]
     ];
 }

@@ -59,7 +59,7 @@
                         <!-- Your like button code -->
                         <div class="fb-like" 
                             data-href="{{ url()->current() }}" 
-                            data-width=""
+                            data-width="250"
                             data-layout="standard" 
                             data-action="like" 
                             data-size="small"  

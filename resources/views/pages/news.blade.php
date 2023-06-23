@@ -42,7 +42,7 @@ Danh sách tin
                             <div class="card shadow-sm border-0">
                                 <div class="card-body">
                                     <a href="{{ URL::route('news-detail', ['id' => $new->id, 'slug' => $new->slug]) }}" title="{{ $new->title }}" class='text-dark'>
-                                        <h5 class="card-title news-card-title">
+                                        <h5 class="card-title news-card-title truncate-two-line">
                                             {{ $new->title }}
                                         </h5>
                                     </a>

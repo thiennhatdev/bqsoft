@@ -10,4 +10,5 @@
 
 .news-card-title {
   color: var(--main-blue);
+  height: 3rem;
 }

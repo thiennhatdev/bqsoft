@@ -13,7 +13,7 @@
 }
 
 .content-of-table>ul {
-  width: max-content;
+  width: 100%;
   padding: 1rem 2rem;
   background: #e9ecef;
   border-radius: 4px;
