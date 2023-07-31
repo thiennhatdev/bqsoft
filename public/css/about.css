@@ -272,7 +272,7 @@
 /* style for toast mail */
 .mail-toast{
   position: fixed; 
-  top: 1rem; 
+  top: 6rem; 
   right: 1rem; 
   z-index: 1000; 
   background: #fff;
@@ -294,7 +294,7 @@
   color: var(--secondary);
 }
 .close-toast-mail {
-  font-size: 1.5rem;
+  font-size: 1rem;
   cursor: pointer;
 }
 /* style for toast mail */

@@ -34,8 +34,8 @@ Trang chủ
           <div class="container my-lg-5 py-lg-5 px-lg-5">
               <div class="row flex-column-reverse flex-lg-row g-5 py-5">
                   <div class="col-lg-6 text-center text-lg-start">
-                      <h1 class="text-white mb-4 animated zoomIn slogan-text">Cung cấp giải pháp chuyển đổi số tốt nhất.</h1>
-                      <p class="text-white pb-3 animated zoomIn">Bạn muốn chuyển đổi ý tưởng thành hiện thực trên nền tảng số hay phát triển công việc kinh doanh bằng một website thương hiệu. Hãy để chúng tôi giúp bạn.</p>
+                      <h1 class="text-white mb-4 animated zoomIn slogan-text">Cung cấp giải pháp chuyển đổi số tốt nhất</h1>
+                      <p class="text-white pb-3 animated zoomIn banner-description">Bạn muốn chuyển đổi ý tưởng thành hiện thực trên nền tảng số hay phát triển công việc kinh doanh bằng một website thương hiệu. Hãy để chúng tôi giúp bạn.</p>
                       <a href="#our-contact" class="btn btn-light py-sm-3 px-sm-5 rounded-pill me-3 animated slideInLeft mt-5">Liên Hệ Ngay</a>
                   </div>
                   <div class="col-lg-6 offset-lg-0 col-8 offset-2 text-center text-lg-start">
@@ -136,7 +136,7 @@ Trang chủ
 
 
   <!-- Portfolio Start -->
-  <div class="container-xxl py-5" id="our-projects">
+  <!-- <div class="container-xxl py-5" id="our-projects">
       <div class="container px-lg-5">
           <div class="section-title position-relative text-center mb-5 pb-2 wow fadeInUp" data-wow-delay="0.1s">
               <p class="position-relative d-inline text-main-blue ps-4">Dự án của chúng tôi</p>
@@ -170,7 +170,7 @@ Trang chủ
             @endforeach
           </div>
       </div>
-  </div>
+  </div> -->
   <!-- Portfolio End -->
 
 

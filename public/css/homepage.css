@@ -117,6 +117,10 @@ h6,
   left: 3px;
 }
 
+/*** Banner ***/
+.banner-description {
+  line-height: 1.5rem;
+}
 /***  About ***/
 .company-about-content {
   line-height: 1.6rem;
@@ -383,7 +387,7 @@ h6,
 /* style for toast mail */
 .mail-toast{
   position: fixed; 
-  top: 1rem; 
+  top: 6rem; 
   right: 1rem; 
   z-index: 1000; 
   background: #fff;
@@ -405,7 +409,7 @@ h6,
   color: var(--secondary);
 }
 .close-toast-mail {
-  font-size: 1.5rem;
+  font-size: 1rem;
   cursor: pointer;
 }
 /* style for toast mail */

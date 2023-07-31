@@ -11,7 +11,7 @@
             <a href="{{ URL::route('homepage') }}" class="nav-item nav-link {{ Route::currentRouteNamed( 'homepage' ) ?  'active' : '' }}">Trang chủ</a>
             <a href="{{ URL::route('about') }}" class="nav-item nav-link {{ Route::currentRouteNamed( 'about' ) ?  'active' : '' }}">Về chúng tôi</a>
             <a href="{{ URL::route('homepage') . '#our-services' }}" class="nav-item nav-link "> Dịch vụ</a>
-            <a href="{{ URL::route('homepage') . '#our-projects' }}" class="nav-item nav-link">Dự án</a>
+            <!-- <a href="{{ URL::route('homepage') . '#our-projects' }}" class="nav-item nav-link">Dự án</a> -->
             <!-- <div class="nav-item dropdown">
                 <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
                 <div class="dropdown-menu m-0">
