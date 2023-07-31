@@ -31,7 +31,8 @@ class NewsController extends Controller
         $markupFixer  = new \TOC\MarkupFixer();
         $tocGenerator = new \TOC\TocGenerator();
         $text = $markupFixer->fix($news_detail->renderBlocks());
-        $body = nl2br($text);
+        $body = preg_replace("/\r\n|\r|\n/", '<br/>', $text);
+        // $body = nl2br($text);
         $menu = $tocGenerator->getHtmlMenu($body);
         $recent_news = $this->newsRepository->recentNews($this->request->id);
         return view('pages.news-detail', [
