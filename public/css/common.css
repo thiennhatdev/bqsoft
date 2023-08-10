@@ -202,3 +202,8 @@ h6,
 button:focus {
 	box-shadow: none !important;
 }
+
+/* input */
+input {
+	color: var(--dark) !important;
+}

@@ -24,3 +24,23 @@ pre {
   padding: 1rem;
   border-radius: 4px;
 }
+
+.news-detail-body li {
+  list-style-type: disclosure-closed;
+}
+
+.contact-news-detail {
+  background: #e5e5e5;
+  border-left: 3px solid #03A9F4;
+  padding: 1rem;
+  border-radius: 4px;
+}
+
+.contact-news-detail b {
+  color: #03A9F4;
+}
+
+.contact-here {
+  text-decoration: underline;
+  color: #03A9F4;
+}

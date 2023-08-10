@@ -19,22 +19,22 @@
               <h5 class="text-main-secondary mb-4">Link</h5>
               <p>
                 <i class="fas fa-hand-point-right"></i>
-                <a class="text-white mx-2" href="https://bqsoft.vn/tin-tuc/tin95-tai-sao-doanh-nghiep-cua-ban-can-co-mot-website.html">
+                <a class="text-white mx-2" href="https://bqsoft.vn/tin-tuc/tin95-tai-sao-doanh-nghiep-cua-ban-can-co-mot-website-dich-vu-thiet-ke-website-chuyen-nghiep-tai-bqsoft.html">
                     Thiết kế website
                 </a>
               </p>
               <p>
                 <i class="fas fa-hand-point-right"></i>
-                <a class="text-white mx-2" href="https://bqsoft.vn/tin-tuc/tin96-thiet-ke-ung-dung-di-dong-la-gi-tai-sao-chon-bqsoft-de-tao-ung-dung-di-dong.html">
+                <a class="text-white mx-2" href="https://bqsoft.vn/tin-tuc/tin96-thiet-ke-app-mobile-la-gi-tai-sao-nen-chon-bqsoft-de-thiet-ke-app.html">
                     Thiết kế Mobile App
                 </a>
               </p>
-              <!-- <p>
+              <p>
                 <i class="fas fa-hand-point-right"></i>
-                <a href="https://bqsoft.vn/tin-tuc/tin95-tai-sao-doanh-nghiep-cua-ban-can-co-mot-website.html">
-                    Thiết kế website
+                <a class="text-white mx-2" href="https://bqsoft.vn/tin-tuc/tin98-seo-tong-the-la-gi-nhung-dieu-quan-trong-khi-thue-dich-vu-seo-tong-the-cho-website.html">
+                    Seo tổng thể
                 </a>
-              </p> -->
+              </p>
               <!-- <a class="btn btn-link" href="#">About Us</a> -->
               <!-- <a class="btn btn-link" href="#">Contact Us</a>
               <a class="btn btn-link" href="#">Privacy Policy</a>
@@ -55,7 +55,7 @@
               <div class="col-md-6 text-center text-md-start">
                 <div class="d-flex py-2">
                     <a class="btn btn-outline-light btn-social" href="https://twitter.com/Bqsoftvn" target="_blank"><i class="fab fa-twitter"></i></a>
-                    <a class="btn btn-outline-light btn-social" href="https://www.facebook.com/hoctusach" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-outline-light btn-social" href="https://www.facebook.com/bqsoftvn/" target="_blank"><i class="fab fa-facebook-f"></i></a>
                     <a class="btn btn-outline-light btn-social" href="https://www.instagram.com/vonhat11/" target="_blank"><i class="fab fa-instagram"></i></a>
                     <a class="btn btn-outline-light btn-social" href="https://www.linkedin.com/in/bqsoft-vn-48ab44278/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
                 </div>
