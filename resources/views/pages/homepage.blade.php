@@ -72,7 +72,7 @@ Trang chủ
                   </div>
                   <div class="d-flex align-items-center mt-4">
                       <!-- <a class="btn btn-main-blue rounded-pill px-4 me-3" href="#">Read More</a> -->
-                      <a class="btn btn-outline-main-blue btn-square me-3" href="https://www.facebook.com/hoctusach" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                      <a class="btn btn-outline-main-blue btn-square me-3" href="https://www.facebook.com/bqsoftvn/" target="_blank"><i class="fab fa-facebook-f"></i></a>
                       <a class="btn btn-outline-main-blue btn-square me-3" href="https://twitter.com/Bqsoftvn" target="_blank"><i class="fab fa-twitter"></i></a>
                       <a class="btn btn-outline-main-blue btn-square me-3" href="https://www.instagram.com/vonhat11/" target="_blank"><i class="fab fa-instagram"></i></a>
                       <a class="btn btn-outline-main-blue btn-square" href="https://www.linkedin.com/in/bqsoft-vn-48ab44278/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
@@ -205,7 +205,7 @@ Trang chủ
             <div class="col-lg-7">
                 <div class="section-title position-relative text-center mb-5 pb-2 wow fadeInUp" data-wow-delay="0.1s">
                     <p class="position-relative d-inline text-main-blue ps-4">Liên hệ</p>
-                    <h2 class="mt-2">Chúng tôi sẽ liên hệ lại chậm nhất trong vòng 24h</h2>
+                    <h2 class="mt-2">Liên hệ để được tư vấn miễn phí</h2>
                 </div>
                 <div class="wow fadeInUp" data-wow-delay="0.3s">
                     <form class="requires-validation" novalidate method="POST" action="{{ URL::route('send-contact') }}">
@@ -222,11 +222,11 @@ Trang chủ
                             </div>
                             <div class="col-md-6">
                                 <div class="form-floating">
-                                    <input type="email" class="form-control" id="email" placeholder="Email của bạn" name="email" required>
+                                    <input type="text" class="form-control" id="email" placeholder="Email hoặc số điện thoại" name="email" required>
                                     <div class="invalid-feedback">
-                                        Vui lòng nhập email!
+                                        Vui lòng nhập email hoặc sđt!
                                     </div>
-                                    <label for="email">Email của bạn</label>
+                                    <label for="email">Email hoặc số điện thoại</label>
                                 </div>
                             </div>
                             <div class="col-12">
@@ -238,7 +238,7 @@ Trang chủ
                                     <label for="subject">Ngân sách</label>
                                 </div>
                             </div>
-                            <div class="col-12">
+                            <!-- <div class="col-12">
                                 <div class="form-floating">
                                     <input type="text" class="form-control" id="title" placeholder="Tiêu đề" name="title" required>
                                     <div class="invalid-feedback">
@@ -246,11 +246,11 @@ Trang chủ
                                     </div>
                                     <label for="subject">Tiêu đề</label>
                                 </div>
-                            </div>
+                            </div> -->
                             <div class="col-12">
                                 <div class="form-floating">
                                     <textarea class="form-control" placeholder="Nhập yêu cầu" id="message" style="height: 150px" name="description"></textarea>
-                                    <label for="message">Yêu cầu của bạn</label>
+                                    <label for="message">Bạn muốn làm Website, Mobile App hay SEO tổng thể ?</label>
                                 </div>
                             </div>
                             <div class="col-12">

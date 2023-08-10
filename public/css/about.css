@@ -266,6 +266,7 @@
 
 .member-avatar {
   width: calc(100% - 75px) !important;
+  height: 285px;
   object-fit: cover;
 }
 

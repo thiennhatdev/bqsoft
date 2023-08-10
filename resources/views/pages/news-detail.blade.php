@@ -52,8 +52,19 @@
                     <div class='content-of-table'>
                         {!! $menu !!}
                     </div>
-                    <div class='news-detail-body mb-5'>
+                    <div class='news-detail-body'>
                         {!! $body !!}
+                    </div>
+                    <div class='contact-news-detail'>
+                        <h5>Liên hệ ngay <a target="_blank" href="https://bqsoft.vn/#our-contact"><i class="contact-here">tại đây</i></a> với chúng tôi để được tư vấn nhanh nhất <b>hoặc</b> liên hệ:</h5>
+                        <br />
+                        <div>
+                            <p><i>Hotline</i>: <b class="">0705.550.553</b></p>
+                            <p><i>Email</i>: <b>bqsoftvn@gmail.com</b></p>
+                            <p><i>Fanpage</i>: <a target="_blank" href="https://www.facebook.com/bqsoftvn"><b>https://www.facebook.com/bqsoftvn</b></a></p>
+                        </div>
+                        <br />
+                        <p>Hân hạnh được hợp tác!</p>
                     </div>
                     <div class="pt-3 mt-3 border-top">
                         <!-- Your like button code -->
@@ -67,6 +78,7 @@
                         </div>
                         </div>
                     </div>
+                    
                 </div>
             </div>
         </div>

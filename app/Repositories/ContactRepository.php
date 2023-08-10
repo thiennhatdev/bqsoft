@@ -24,7 +24,7 @@ class ContactRepository extends ModuleRepository
             'username' => $request->username,
             'email' => $request->email,
             'price' => $request->price,
-            'title' => $request->title,
+            'title' => "Yêu cầu từ khách hàng",
             'description' => $request->description,
         ]);
         return "Gửi liên hệ thành công!";

@@ -61,7 +61,7 @@ Công ty Bqsoft
                         </div>
                         <div class="d-flex align-items-center mt-4">
                             <!-- <a class="btn btn-main-blue rounded-pill px-4 me-3" href="#">Read More</a> -->
-                            <a class="btn btn-outline-main-blue btn-square me-3" href="https://www.facebook.com/hoctusach" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-outline-main-blue btn-square me-3" href="https://www.facebook.com/bqsoftvn/" target="_blank"><i class="fab fa-facebook-f"></i></a>
                             <a class="btn btn-outline-main-blue btn-square me-3" href="https://twitter.com/Bqsoftvn" target="_blank"><i class="fab fa-twitter"></i></a>
                             <a class="btn btn-outline-main-blue btn-square me-3" href="https://www.instagram.com/vonhat11/" target="_blank"><i class="fab fa-instagram"></i></a>
                             <a class="btn btn-outline-main-blue btn-square" href="https://www.linkedin.com/in/bqsoft-vn-48ab44278/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
@@ -103,7 +103,7 @@ Công ty Bqsoft
     <div class="container px-lg-5">
         <div class="section-title position-relative text-center mb-5 pb-2 wow fadeInUp" data-wow-delay="0.1s">
             <p class="position-relative d-inline text-main-blue ps-4">Đội ngũ</p>
-            <h2 class="mt-2">Tất cả thành viên công ty</h2>
+            <h2 class="mt-2">Thành viên công ty</h2>
         </div>
         <div class="row g-4">
             @foreach($members as $member)
