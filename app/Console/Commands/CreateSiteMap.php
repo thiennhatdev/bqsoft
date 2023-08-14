@@ -44,6 +44,18 @@ class CreateSiteMap extends Command
         // add items to the sitemap (url, date, priority, freq)
         $sitemap->add(\URL::to('/'), '2021-02-25T20:10:00+02:00', '1.0', 'daily');
 
+        $sitemap->add(\URL::to('/danh-sach-khoa-hoc'), '2021-02-25T20:10:00+02:00', '1.0', 'daily');
+
+        $sitemap->add(\URL::to('/khoa-hoc-frontend'), '2021-02-25T20:10:00+02:00', '1.0', 'daily');
+
+        $sitemap->add(\URL::to('/khoa-hoc-backend'), '2021-02-25T20:10:00+02:00', '1.0', 'daily');
+
+        $sitemap->add(\URL::to('/khoa-hoc-fullstack'), '2021-02-25T20:10:00+02:00', '1.0', 'daily');
+
+        $sitemap->add(\URL::to('/khoa-hoc-reactnative'), '2021-02-25T20:10:00+02:00', '1.0', 'daily');
+        
+        $sitemap->add(\URL::to('/dang-ky-khoa-hoc'), '2021-02-25T20:10:00+02:00', '1.0', 'daily');
+
         // $categories = \DB::table('categorys')->orderBy('created_at', 'desc')->get();
 
         // foreach ($categories as $category)
