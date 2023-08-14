@@ -24,5 +24,15 @@ Route::name('search')->get('/tim-kiem/{slug}.html', 'App\Http\Controllers\PageCo
 Route::name('404')->get('/khong-tim-thay', 'App\Http\Controllers\PageController@notfound');
 Route::name('services-detail')->get('/dich-vu/{slug}-{id}.html', 'App\Http\Controllers\ServicesController@index');
 
-// Route::name('projects')->get('/du-an.html', 'App\Http\Controllers\ProjectController@list');
+Route::name('courses')->get('/danh-sach-khoa-hoc', 'App\Http\Controllers\CourseController@index');
+Route::name('courses-frontend')->get('/khoa-hoc-frontend', 'App\Http\Controllers\CourseController@frontend');
+Route::name('courses-backend')->get('/khoa-hoc-backend', 'App\Http\Controllers\CourseController@backend');
+Route::name('courses-fullstack')->get('/khoa-hoc-fullstack', 'App\Http\Controllers\CourseController@fullstack');
+Route::name('courses-reactnative')->get('/khoa-hoc-reactnative', 'App\Http\Controllers\CourseController@reactnative');
+Route::name('courses-signup')->get('/dang-ky-khoa-hoc', 'App\Http\Controllers\CourseController@signup');
+Route::name('courses-signup-action')->post('/dang-ky-khoa-hoc', 'App\Http\Controllers\CourseController@actionSignup');
 
+// Route::name('projects')->get('/du-an.html', 'App\Http\Controllers\ProjectController@list');
+Route::get('/run-migrations', function () {
+    return Artisan::call('migrate');
+});

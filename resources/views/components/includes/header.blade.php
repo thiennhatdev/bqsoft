@@ -1,7 +1,7 @@
 <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
   <div class="container-xxl px-lg-5 position-relative">
     <a href="{{ URL::route('homepage') }}" class="navbar-brand p-0">
-        <img src="{{ asset('img/logo.svg') }}" alt="logo-bqsoft">
+        <img src="{{ asset('img/logo.svg') }}" alt="Trang chủ">
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
         <span class="fa fa-bars"></span>

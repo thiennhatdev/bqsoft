@@ -12,3 +12,4 @@ Route::module('reviews');
 Route::module('abouts');
 
 Route::module('teamMembers');
+Route::module('courseUsers');

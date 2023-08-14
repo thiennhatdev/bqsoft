@@ -33,4 +33,8 @@ return [
         'title' => 'Thành viên',
         'module' => true,
     ],
+    'courseUsers' => [
+        'title' => 'Danh sách học viên',
+        'module' => true,
+    ],
 ];

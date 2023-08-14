@@ -32,9 +32,34 @@
               <p>
                 <i class="fas fa-hand-point-right"></i>
                 <a class="text-white mx-2" href="https://bqsoft.vn/tin-tuc/tin98-seo-tong-the-la-gi-nhung-dieu-quan-trong-khi-thue-dich-vu-seo-tong-the-cho-website.html">
-                    Seo tổng thể
+                SEO tổng thể
                 </a>
               </p>
+              <p>
+                <i class="fas fa-hand-point-right"></i>
+                <a class="text-white mx-2" href="{{ URL::route('courses-frontend') }}">
+                    Khoá học lập trình Frontend
+                </a>
+              </p>
+              <p>
+                <i class="fas fa-hand-point-right"></i>
+                <a class="text-white mx-2" href="{{ URL::route('courses-backend') }}">
+                    Khoá học lập trình Backend
+                </a>
+              </p>
+              <p>
+                <i class="fas fa-hand-point-right"></i>
+                <a class="text-white mx-2" href="{{ URL::route('courses-fullstack') }}">
+                Khoá học lập trình Fullstack
+                </a>
+              </p>
+              <p>
+                <i class="fas fa-hand-point-right"></i>
+                <a class="text-white mx-2" href="{{ URL::route('courses-reactnative') }}">
+                Khoá học lập trình Mobile (React native)
+                </a>
+              </p>
+              
               <!-- <a class="btn btn-link" href="#">About Us</a> -->
               <!-- <a class="btn btn-link" href="#">Contact Us</a>
               <a class="btn btn-link" href="#">Privacy Policy</a>
