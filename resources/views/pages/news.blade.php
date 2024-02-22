@@ -15,7 +15,7 @@ Danh sách tin
         <div class="container my-lg-5 py-md-5 px-lg-5">
             <div class=" g-5 py-5">
               <div class="col-12">
-                  <h1 class="text-white animated zoomIn">Tin tức</h1>
+                  <h1 class="text-white animated zoomIn">Bài viết</h1>
                   <hr class="bg-white mt-0" style="width: 90px;">
                   <nav aria-label="breadcrumb">
                       <ol class="breadcrumb">

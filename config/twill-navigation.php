@@ -10,7 +10,7 @@ return [
         'module' => true,
     ],
     'news' => [
-        'title' => 'Tin tức',
+        'title' => 'Bài viết',
         'module' => true,
     ],
     'contacts' => [

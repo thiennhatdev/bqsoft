@@ -42,7 +42,7 @@
 <div class="container-xxl py-5">
     <div class="container px-lg-5">
         <div class="row g-5">
-            <div class="col-12 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="col-12 col-lg-9 wow fadeInUp" data-wow-delay="0.1s">
                 <div class='row g-4 courses'>
                     <div class='course-title'>
                         <h1>
@@ -159,7 +159,7 @@
                         <div class='course-body__price'>
                             <div class='course-body-title'>Học phí khoá học</div>
                             <div>
-                                <div class='course-price'>11.990.000 vnđ</div>
+                                <div class='course-price'>7.990.000 vnđ</div>
                             </div>
                         </div>
 
@@ -167,6 +167,23 @@
                             <a href="{{ URL::route('courses-signup', ['course' => 1]) }}">Đăng ký ngay</a>
                         </div>
                     </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-lg-3 pl-0">
+                <div class="lastest-news">
+                    <div class="lastest-news-title">
+                        <h3>
+                            Bài viết mới nhất
+                        </h3>
+                    </div>
+                    <ul class="lastest-news-body">
+                        @foreach($recent_news as $new)
+                            <li>
+                                <a href="{{ URL::route('news-detail', ['id' => $new->id, 'slug' => $new->slug]) }}" title="{{ $new->title }}"  class="truncate-two-line">{{ $new->title }}</a>
+                            </li>
+                        @endforeach
+                    </ul>
                 </div>
             </div>
         </div>

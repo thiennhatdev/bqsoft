@@ -57,8 +57,9 @@ class NewsRepository extends ModuleRepository
         $recent_news = $this->model
             ->where('news.id', '!=', $news_id)
             ->published() 
+            ->orderBy('created_at', 'desc')
             ->get()
-            ->take(5);
+            ->take(8);
         return $recent_news;
     }
 

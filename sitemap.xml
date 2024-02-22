@@ -2,79 +2,79 @@
 <?xml-stylesheet href="/vendor/sitemap/styles/xml.xsl" type="text/xsl"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
 	<url>
-	<loc>https://bqsoft.vn</loc>
+	<loc>http://localhost:8000</loc>
 		<priority>1.0</priority>
 		<lastmod>2021-02-25T18:10:00+00:00</lastmod>
 		<changefreq>daily</changefreq>
 	</url>
 	<url>
-	<loc>https://bqsoft.vn/danh-sach-khoa-hoc</loc>
+	<loc>http://localhost:8000/danh-sach-khoa-hoc</loc>
 		<priority>1.0</priority>
 		<lastmod>2021-02-25T18:10:00+00:00</lastmod>
 		<changefreq>daily</changefreq>
 	</url>
 	<url>
-	<loc>https://bqsoft.vn/khoa-hoc-frontend</loc>
+	<loc>http://localhost:8000/khoa-hoc-frontend</loc>
 		<priority>1.0</priority>
 		<lastmod>2021-02-25T18:10:00+00:00</lastmod>
 		<changefreq>daily</changefreq>
 	</url>
 	<url>
-	<loc>https://bqsoft.vn/khoa-hoc-backend</loc>
+	<loc>http://localhost:8000/khoa-hoc-backend</loc>
 		<priority>1.0</priority>
 		<lastmod>2021-02-25T18:10:00+00:00</lastmod>
 		<changefreq>daily</changefreq>
 	</url>
 	<url>
-	<loc>https://bqsoft.vn/khoa-hoc-fullstack</loc>
+	<loc>http://localhost:8000/khoa-hoc-fullstack</loc>
 		<priority>1.0</priority>
 		<lastmod>2021-02-25T18:10:00+00:00</lastmod>
 		<changefreq>daily</changefreq>
 	</url>
 	<url>
-	<loc>https://bqsoft.vn/khoa-hoc-reactnative</loc>
+	<loc>http://localhost:8000/khoa-hoc-reactnative</loc>
 		<priority>1.0</priority>
 		<lastmod>2021-02-25T18:10:00+00:00</lastmod>
 		<changefreq>daily</changefreq>
 	</url>
 	<url>
-	<loc>https://bqsoft.vn/dang-ky-khoa-hoc</loc>
+	<loc>http://localhost:8000/dang-ky-khoa-hoc</loc>
 		<priority>1.0</priority>
 		<lastmod>2021-02-25T18:10:00+00:00</lastmod>
 		<changefreq>daily</changefreq>
 	</url>
 	<url>
-	<loc>https://bqsoft.vn/tin-tuc/tin98-seo-tong-the-la-gi-nhung-dieu-quan-trong-khi-thue-dich-vu-seo-tong-the-cho-website.html</loc>
+	<loc>http://localhost:8000/tin-tuc/tin98-seo-tong-the-la-gi-nhung-dieu-quan-trong-khi-thue-dich-vu-seo-tong-the-cho-website.html</loc>
 		<priority>0.7</priority>
 		<lastmod>2023-07-31T04:02:19+00:00</lastmod>
 		<changefreq>daily</changefreq>
 	</url>
 	<url>
-	<loc>https://bqsoft.vn/tin-tuc/tin97-login-google-trong-du-an-react-native-khong-su-dung-firebase.html</loc>
+	<loc>http://localhost:8000/tin-tuc/tin97-login-google-trong-du-an-react-native-khong-su-dung-firebase.html</loc>
 		<priority>0.7</priority>
 		<lastmod>2023-07-08T01:24:51+00:00</lastmod>
 		<changefreq>daily</changefreq>
 	</url>
 	<url>
-	<loc>https://bqsoft.vn/tin-tuc/tin96-thiet-ke-app-mobile-la-gi-tai-sao-nen-chon-bqsoft-de-thiet-ke-app.html</loc>
+	<loc>http://localhost:8000/tin-tuc/tin96-thiet-ke-app-mobile-la-gi-tai-sao-nen-chon-bqsoft-de-thiet-ke-app.html</loc>
 		<priority>0.7</priority>
 		<lastmod>2023-06-23T01:48:43+00:00</lastmod>
 		<changefreq>daily</changefreq>
 	</url>
 	<url>
-	<loc>https://bqsoft.vn/tin-tuc/tin95-tai-sao-doanh-nghiep-cua-ban-can-co-mot-website-dich-vu-thiet-ke-website-chuyen-nghiep-tai-bqsoft.html</loc>
+	<loc>http://localhost:8000/tin-tuc/tin95-tai-sao-doanh-nghiep-cua-ban-can-co-mot-website-dich-vu-thiet-ke-website-chuyen-nghiep-tai-bqsoft.html</loc>
 		<priority>0.7</priority>
 		<lastmod>2023-06-22T10:51:06+00:00</lastmod>
 		<changefreq>daily</changefreq>
 	</url>
 	<url>
-	<loc>https://bqsoft.vn/tin-tuc/tin94-huong-dan-tu-a-z-cach-deloy-website-laravel-len-hosting.html</loc>
+	<loc>http://localhost:8000/tin-tuc/tin94-huong-dan-tu-a-z-cach-deloy-website-laravel-len-hosting.html</loc>
 		<priority>0.7</priority>
 		<lastmod>2023-06-11T23:28:27+00:00</lastmod>
 		<changefreq>daily</changefreq>
 	</url>
 	<url>
-	<loc>https://bqsoft.vn/tin-tuc/tin93-huong-dan-tao-file-sitemap-trong-ung-dung-laravel.html</loc>
+	<loc>http://localhost:8000/tin-tuc/tin93-huong-dan-tao-file-sitemap-trong-ung-dung-laravel.html</loc>
 		<priority>0.7</priority>
 		<lastmod>2023-06-10T01:47:00+00:00</lastmod>
 		<changefreq>daily</changefreq>
