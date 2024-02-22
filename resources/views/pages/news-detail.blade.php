@@ -12,6 +12,14 @@
     <meta property="og:image" content="{{ $news_detail->image('thumbnail', 'default') }}">
     <meta property="og:url" content="{{ url()->current() }}">
 
+    <meta content="text/html; charset=UTF-8" name="Content-Type" />
+    <meta name="twitter:title" content="{{ $news_detail->title }}" />
+    <meta name="twitter:description" content="{!! Str::words($news_detail->description, 150)  !!}" />
+    <meta name="twitter:site_name" content="{{ $news_detail->title }}" />
+    <meta name="twitter:image" content="{{ $news_detail->image('thumbnail', 'default') }}">
+    <meta name="twitter:url" content="{{ url()->current() }}">
+
+
   <link href="{{ asset('/css/news-detail.css') }}" rel="stylesheet" />
 @endsection
 
@@ -22,7 +30,7 @@
       <div class="container my-lg-5 py-md-5 px-lg-5">
           <div class=" g-5 py-5">
             <div class="col-12">
-                <h1 class="text-white animated zoomIn">Tin tức</h1>
+                <h1 class="text-white animated zoomIn">Bài viết</h1>
                 <hr class="bg-white mt-0" style="width: 90px;">
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb">
@@ -42,12 +50,13 @@
 <div class="container-xxl py-5">
     <div class="container px-lg-5">
         <div class="row g-5">
-            <div class="col-12 wow fadeInUp" data-wow-delay="0.1s">
+
+            <div class="col-12 col-lg-9 wow fadeInUp" data-wow-delay="0.1s">
                 <div class='row g-4 news-detail'>
                     <h1>{{ $news_detail->title }}</h1>
                     <div class="mt-0">
                         <i class="fas fa-calendar"></i>
-                        <span>Ngày đăng: </span> {{ \Carbon\Carbon::parse($news_detail->created_at)->format('d/m/Y') }}
+                        <span>Ngày đăng: </span> {{ \Carbon\Carbon::parse($news_detail->updated_at)->format('d/m/Y') }}
                     </div>
                     <div class='content-of-table'>
                         {!! $menu !!}
@@ -76,14 +85,30 @@
                             data-size="small"  
                             data-share="true">
                         </div>
-                        </div>
                     </div>
-                    
                 </div>
             </div>
+
+            <div class="col-12 col-lg-3 pl-0">
+                <div class="lastest-news">
+                    <div class="lastest-news-title">
+                        <h3>
+                            Bài viết mới nhất
+                        </h3>
+                    </div>
+                    <ul class="lastest-news-body">
+                        @foreach($recent_news as $new)
+                            <li>
+                                <a href="{{ URL::route('news-detail', ['id' => $new->id, 'slug' => $new->slug]) }}" title="{{ $new->title }}"  class="truncate-two-line">{{ $new->title }}</a>
+                            </li>
+                        @endforeach
+                    </ul>
+                </div>
+            </div>
+
         </div>
     </div>
-  </div>
+</div>
 <!-- News End -->
 <div class='bg-secondary'>
 

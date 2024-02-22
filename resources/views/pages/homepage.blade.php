@@ -88,7 +88,7 @@ Trang chủ
       <div class="container px-lg-5">
           <div class="row align-items-center" style="height: 250px;">
               <div class="col-12 col-md-6">
-                  <h3 class="text-white">Gửi những tin tức mới nhất đến email</h3>
+                  <h3 class="text-white">Gửi những bài viết mới nhất đến email</h3>
                   <small class="text-white">Những thông tin mới sẽ giúp nắm bắt được những cơ hội!</small>
                   <div class="position-relative w-100 mt-3">
                       <form class="requires-validation" novalidate method="POST" action="{{ URL::route('save-mail') }}">
